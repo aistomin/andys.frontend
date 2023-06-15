@@ -1,0 +1,11 @@
+{
+  "moduleDirectories": [
+    "node_modules",
+    "src"
+  ],
+  "transform": {
+    "^.+\\.[t|j]sx?$": "babel-jest",
+    ".+\\.(css|less|sass|scss|png|jpg|gif|ttf|woff|woff2|svg)$": "jest-transform-stub"
+  },
+  "testEnvironment": "jsdom"
+}
