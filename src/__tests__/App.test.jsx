@@ -1,12 +1,14 @@
 import App from "../App.jsx";
 import {render} from "@testing-library/react";
 
+window.scrollTo = jest.fn();
+
 describe("App Component", function () {
     it("should have correct startup message", function () {
         let { getByText } = render(<App />);
-        expect(getByText("Vite + React")).toMatchInlineSnapshot(`
+        expect(getByText("TBD")).toMatchInlineSnapshot(`
       <h1>
-        Vite + React
+        TBD
       </h1>
     `);
     });
