@@ -394,6 +394,12 @@ button:focus {
   padding-left: 15px;
 }
 
+.social-icons-footer {
+  display: inline-block !important;
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
 .icon-colour {
   color: #700c86 !important;
 }
@@ -407,7 +413,12 @@ button:focus {
   padding-top: 10px !important;
   padding-bottom: 8px !important ;
 }
-.footer-copywright {
+
+.footer-credits {
+  text-align: center !important;
+}
+
+.footer-copyright {
   text-align: center !important;
 }
 
@@ -417,7 +428,7 @@ button:focus {
 }
 
 @media (max-width: 767px) {
-  .footer-copywright {
+  .footer-copyright {
     text-align: center !important;
   }
 
