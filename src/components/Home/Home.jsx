@@ -2,16 +2,14 @@ import {Container, Row, Col} from "react-bootstrap";
 import photo from "../../assets/andy.jpg";
 import Tilt from "react-parallax-tilt";
 import {
-    AiFillGithub,
     AiOutlineTwitter,
     AiFillInstagram, AiFillYoutube, AiFillFacebook,
 } from "react-icons/ai";
-import {FaLinkedinIn} from "react-icons/fa";
 
 function Home() {
     return (
-        <Container fluid className="home-section">
-            <Container fluid className="home-content">
+        <section>
+            <Container fluid className="home-content" id="about">
                 <Container>
                     <Row>
                         <Col md={7} className="home-introduction">
@@ -26,7 +24,8 @@ function Home() {
                                 <span className="wave" role="img" aria-labelledby="wave">👋🏻</span>
                             </h1>
                             <p className="home-about-body">
-                                <i><b className="purple">Andy</b></i> here. This is my personal website where I share my&nbsp;
+                                <i><b className="purple">Andy</b></i> here. This is my personal website where I
+                                share my&nbsp;
                                 <i><b className="purple">passion</b></i> for Music 🎸
                                 It is an extension of my day to day activity, a little part
                                 of me that I would like to share with you.
@@ -63,7 +62,7 @@ function Home() {
                                         rel="noreferrer"
                                         className="icon-colour  home-social-icons"
                                     >
-                                        <AiFillYoutube />
+                                        <AiFillYoutube/>
                                     </a>
                                 </li>
                                 <li className="social-icons">
@@ -73,7 +72,7 @@ function Home() {
                                         rel="noreferrer"
                                         className="icon-colour  home-social-icons"
                                     >
-                                        <AiFillInstagram />
+                                        <AiFillInstagram/>
                                     </a>
                                 </li>
                                 <li className="social-icons">
@@ -83,7 +82,7 @@ function Home() {
                                         rel="noreferrer"
                                         className="icon-colour  home-social-icons"
                                     >
-                                        <AiFillFacebook />
+                                        <AiFillFacebook/>
                                     </a>
                                 </li>
                                 <li className="social-icons">
@@ -93,7 +92,7 @@ function Home() {
                                         rel="noreferrer"
                                         className="icon-colour  home-social-icons"
                                     >
-                                        <AiOutlineTwitter />
+                                        <AiOutlineTwitter/>
                                     </a>
                                 </li>
                             </ul>
@@ -101,7 +100,7 @@ function Home() {
                     </Row>
                 </Container>
             </Container>
-        </Container>
+        </section>
     );
 }
 
