@@ -1,7 +1,6 @@
 import {useState, useEffect} from "react";
 import Preloader from "./components/Pre.jsx";
 import Navbar from "./components/Navbar.jsx";
-import Home from "./components/Home/Home.jsx";
 import About from "./components/About/About.jsx";
 import Projects from "./components/Projects/Projects.jsx";
 import Footer from "./components/Footer.jsx";
@@ -15,6 +14,7 @@ import ScrollToTop from "./components/ScrollToTop.jsx";
 import "./style.css";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
+import Home from "./components/Home/Home.jsx";
 
 function App() {
     const [load, updateLoad] = useState(true);
