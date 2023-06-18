@@ -7,7 +7,7 @@ describe("Footer Component", function () {
         const {container} = render(<App/>);
         const credits = container.getElementsByClassName('footer-credits');
         expect(credits[0].textContent)
-            .toMatchInlineSnapshot(`"Designed by Soumyajit Behera, developed by Andrej Istomin"`);
+            .toMatchInlineSnapshot(`"Designed by Soumyajit, developed by Andrej.Icons made by Amonrat"`);
     });
 
     it("should have correct copyright", function () {

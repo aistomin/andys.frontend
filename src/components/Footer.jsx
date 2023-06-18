@@ -11,10 +11,9 @@ function Footer() {
         <Container fluid className="footer">
             <Row>
                 <Col md="4" className="footer-credits">
-                    Designed by <a href="https://github.com/soumyajit4419">Soumyajit Behera</a>, developed by <a
-                    href="https://github.com/aistomin">Andrej Istomin</a>.
-                    <br/>Icons made by <a href="https://www.flaticon.com/authors/amonrat-rungreangfangsai">Amonrat
-                    Rungreangfangsai</a>
+                    Designed by <a href="https://github.com/soumyajit4419">Soumyajit</a>, developed by <a
+                    href="https://github.com/aistomin">Andrej</a>.
+                    <br/>Icons made by <a href="https://www.flaticon.com/authors/amonrat-rungreangfangsai">Amonrat</a>
                 </Col>
                 <Col md="4" className="footer-copyright">
                     <h3>Copyright © {year} Andy Grails</h3>
