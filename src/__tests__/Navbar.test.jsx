@@ -4,9 +4,9 @@ import App from "../App.jsx";
 describe("Navbar Component", function () {
 
     it("should have correct logo", function () {
-        const {getByTestId} = render(<App/>);
-        expect(getByTestId("logo"))
-            .toHaveTextContent("ANDY GRAILS");
+        const {container} = render(<App/>);
+        const logo = container.getElementsByClassName("main-name")[0]
+        expect(logo.textContent).toBe("Andy Grails");
     });
 
     it("should have correct navigation links", function () {
