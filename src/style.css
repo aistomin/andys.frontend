@@ -274,7 +274,7 @@ button:focus {
 }
 
 .home-content {
-  padding: 1rem 0 2rem !important;
+  padding: 2rem 0 2rem !important;
   color: whitesmoke;
   text-align: left;
 }
@@ -291,6 +291,8 @@ button:focus {
 
 .main-name {
   color: #cd5ff8;
+  font-family: Germania One, sans-serif;
+  font-size: 3em;
 }
 
 .Typewriter__wrapper {
