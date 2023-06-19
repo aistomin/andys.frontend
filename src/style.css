@@ -747,7 +747,7 @@ button:focus {
 /* Errors */
 /* --------- */
 .error-page {
-  padding: 8rem 0 2rem !important;
+  padding: 3rem 0 2rem !important;
   color: whitesmoke;
   text-align: center;
 }
