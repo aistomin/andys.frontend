@@ -16,6 +16,7 @@ import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Home from "./components/Home/Home.jsx";
 import UnderConstruction from "./components/errors/UnderConstruction.jsx";
+import Videos from "./components/videos/Videos.jsx";
 
 function App() {
     const [load, updateLoad] = useState(true);
@@ -23,7 +24,7 @@ function App() {
     useEffect(() => {
         const timer = setTimeout(() => {
             updateLoad(false);
-        }, 1200);
+        }, 0);
         return () => clearTimeout(timer);
     }, []);
 
@@ -35,10 +36,14 @@ function App() {
                 <ScrollToTop/>
                 <Routes>
                     <Route path="/" element={<Home/>}/>
-                    <Route path="/videos" element={<UnderConstruction/>}/>
+                    <Route path="/videos">
+                        <Route index element={<Videos/>}/>
+                        <Route path=":id" element={<UnderConstruction/>}/>
+                    </Route>
                     <Route path="/notes" element={<UnderConstruction/>}/>
                     <Route path="/lyrics" element={<UnderConstruction/>}/>
                     <Route path="/about" element={<UnderConstruction/>}/>
+                    <Route path="/video" element={<UnderConstruction/>}/>
                     <Route path="*" element={<Navigate to="/"/>}/>
                 </Routes>
                 <Footer/>
