@@ -742,3 +742,12 @@ button:focus {
 .fork-btn-inner::after {
   display: none !important;
 }
+
+/* --------- */
+/* Errors */
+/* --------- */
+.error-page {
+  padding: 9rem 0 9rem !important;
+  color: whitesmoke;
+  text-align: center;
+}
