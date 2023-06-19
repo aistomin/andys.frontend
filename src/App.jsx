@@ -15,6 +15,7 @@ import "./style.css";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Home from "./components/Home/Home.jsx";
+import UnderConstruction from "./components/errors/UnderConstruction.jsx";
 
 function App() {
     const [load, updateLoad] = useState(true);
@@ -34,10 +35,10 @@ function App() {
                 <ScrollToTop/>
                 <Routes>
                     <Route path="/" element={<Home/>}/>
-                    <Route path="/videos" element={<Projects/>}/>
-                    <Route path="/notes" element={<Projects/>}/>
-                    <Route path="/lyrics" element={<Projects/>}/>
-                    <Route path="/about" element={<About/>}/>
+                    <Route path="/videos" element={<UnderConstruction/>}/>
+                    <Route path="/notes" element={<UnderConstruction/>}/>
+                    <Route path="/lyrics" element={<UnderConstruction/>}/>
+                    <Route path="/about" element={<UnderConstruction/>}/>
                     <Route path="*" element={<Navigate to="/"/>}/>
                 </Routes>
                 <Footer/>
