@@ -1,8 +1,6 @@
 import {useState, useEffect} from "react";
 import Preloader from "./components/Pre.jsx";
 import Navbar from "./components/Navbar.jsx";
-import About from "./components/About/About.jsx";
-import Projects from "./components/Projects/Projects.jsx";
 import Footer from "./components/Footer.jsx";
 import {
     BrowserRouter as Router,
