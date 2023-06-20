@@ -9,12 +9,14 @@ function VideoCard({id, title, description, url}) {
             <iframe src={url} height="300"/>
             <Card.Body>
                 <Card.Title>{title}</Card.Title>
+                <br/>
                 <Card.Text style={{textAlign: "justify"}}>
-                    {description}
+                    {description ? description.split('.').slice(0, 5).join('.') : ""}
                 </Card.Text>
+                <br/>
                 <Link to={`/videos/${id}`}>
                     <Button variant="primary">
-                        Details
+                        More
                     </Button>
                 </Link>
             </Card.Body>
