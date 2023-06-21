@@ -6,8 +6,7 @@ import {Link} from "react-router-dom";
 import {CgMusicNote} from "react-icons/cg";
 import {
     AiOutlineHome,
-    AiOutlineFundProjectionScreen,
-    AiOutlineUser,
+    AiOutlineFundProjectionScreen
 } from "react-icons/ai";
 import {CgFileDocument} from "react-icons/cg";
 
@@ -53,7 +52,6 @@ function Navbar() {
                                 <AiOutlineHome style={{marginBottom: "2px"}}/> Home
                             </Nav.Link>
                         </Nav.Item>
-
                         <Nav.Item>
                             <Nav.Link
                                 as={Link}
@@ -65,7 +63,6 @@ function Navbar() {
                                 />{" "} Videos
                             </Nav.Link>
                         </Nav.Item>
-
                         <Nav.Item>
                             <Nav.Link
                                 as={Link}
@@ -75,7 +72,6 @@ function Navbar() {
                                 <CgMusicNote style={{marginBottom: "2px"}}/> Notes/Tabs
                             </Nav.Link>
                         </Nav.Item>
-
                         <Nav.Item>
                             <Nav.Link
                                 as={Link}
@@ -83,16 +79,6 @@ function Navbar() {
                                 onClick={() => updateExpanded(false)}
                             >
                                 <CgFileDocument style={{marginBottom: "2px"}}/> Lyrics
-                            </Nav.Link>
-                        </Nav.Item>
-
-                        <Nav.Item>
-                            <Nav.Link
-                                as={Link}
-                                to="/about"
-                                onClick={() => updateExpanded(false)}
-                            >
-                                <AiOutlineUser style={{marginBottom: "2px"}}/> About
                             </Nav.Link>
                         </Nav.Item>
                     </Nav>

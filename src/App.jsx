@@ -40,7 +40,6 @@ function App() {
                     </Route>
                     <Route path="/notes" element={<UnderConstruction/>}/>
                     <Route path="/lyrics" element={<UnderConstruction/>}/>
-                    <Route path="/about" element={<UnderConstruction/>}/>
                     <Route path="/video" element={<UnderConstruction/>}/>
                     <Route path="*" element={<Navigate to="/"/>}/>
                 </Routes>
