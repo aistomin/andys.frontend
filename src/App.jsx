@@ -15,6 +15,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import Home from "./components/Home/Home.jsx";
 import UnderConstruction from "./components/errors/UnderConstruction.jsx";
 import Videos from "./components/videos/Videos.jsx";
+import Video from "./components/videos/Video.jsx";
 
 function App() {
     const [load, updateLoad] = useState(true);
@@ -36,11 +37,10 @@ function App() {
                     <Route path="/" element={<Home/>}/>
                     <Route path="/videos">
                         <Route index element={<Videos/>}/>
-                        <Route path=":id" element={<UnderConstruction/>}/>
+                        <Route path=":id" element={<Video/>}/>
                     </Route>
                     <Route path="/notes" element={<UnderConstruction/>}/>
                     <Route path="/lyrics" element={<UnderConstruction/>}/>
-                    <Route path="/video" element={<UnderConstruction/>}/>
                     <Route path="*" element={<Navigate to="/"/>}/>
                 </Routes>
                 <Footer/>
