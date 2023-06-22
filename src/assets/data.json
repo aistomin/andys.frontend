@@ -1,12 +1,32 @@
 {
-  "videos-fake": [
+  "videos": [
     {
       "id": 1,
       "title": "Black Hole Paradox with Neil deGrasse Tyson & Matt O’Dowd – Cosmic Queries",
       "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec ac ante felis. Donec vulputate cursus rhoncus. In eu massa bibendum, convallis dui ac, dignissim felis. Cras tincidunt a dui in pretium. Curabitur eu congue tortor, sit amet dignissim neque. Maecenas eget bibendum orci. In faucibus mauris lectus. Maecenas risus lorem, pretium id erat eget, molestie ullamcorper nibh. Phasellus porta tincidunt eros, dictum euismod magna blandit tincidunt. Integer suscipit turpis eu porttitor aliquet. Donec vel pharetra tortor, ut auctor nisi. Vestibulum sed ex est. Cras cursus neque non risus condimentum aliquet. Nam eu ipsum aliquet, condimentum ligula ut, pellentesque ex.",
       "url": "https://www.youtube.com/embed/OcX7xpxOC2U",
       "createdOn": "2019-07-04",
-      "publishedOn": "2023-06-10"
+      "publishedOn": "2023-06-10",
+      "lyrics": [
+        {
+          "id": 101,
+          "title": "Black Hole Paradox. Lyrics."
+        },
+        {
+          "id": 102,
+          "title": "Black Hole Paradox. Alternative lyrics."
+        }
+      ],
+      "sheets": [
+        {
+          "id": 111,
+          "title": "Black Hole Paradox. Music sheet."
+        },
+        {
+          "id": 112,
+          "title": "Black Hole Paradox. Alternative music sheet."
+        }
+      ]
     },
     {
       "id": 2,

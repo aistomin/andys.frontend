@@ -6,7 +6,11 @@ import {Link} from "react-router-dom";
 function VideoCard({id, title, description, url}) {
     return (
         <Card className="video-card-view">
-            <iframe src={url} height="300"/>
+            <div className="ratio ratio-16x9">
+                <iframe title="Embeds Page" className="embed-responsive-item"
+                        src={url}
+                        allowFullScreen></iframe>
+            </div>
             <Card.Body>
                 <Card.Title>{title}</Card.Title>
                 <br/>

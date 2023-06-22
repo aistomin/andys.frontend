@@ -753,6 +753,21 @@ button:focus {
   background-image: var(--section-background-color) !important;
 }
 
+.video-content {
+  padding: 3rem 0 2rem !important;
+  color: whitesmoke;
+  text-align: left;
+}
+
+.video-section {
+  position: relative !important;
+  padding-top: 150px !important;
+  padding-bottom: 30px !important;
+  background-image: var(--section-background-color) !important;
+  color: whitesmoke;
+  text-align: left;
+}
+
 .video-card {
   padding: 50px 25px !important;
   height: auto !important;
@@ -770,6 +785,26 @@ button:focus {
   transform: scale(1.02) !important;
   overflow: hidden !important;
   box-shadow: 0 4px 4px 5px rgba(129, 72, 144, 0.561) !important;
+}
+
+.video-title {
+  font-size: 2.5em !important;
+  padding-top: 1em !important;
+}
+
+.video-block {
+  padding-top: 80px !important;
+}
+
+.embedded-video {
+  justify-content: center !important;
+  padding-top: 8em !important;
+}
+
+.video-description {
+  padding-top: 50px;
+  font-size: 1.2em !important;
+  text-align: left;
 }
 
 /* --------- */
