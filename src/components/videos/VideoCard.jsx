@@ -2,6 +2,7 @@ import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import PropTypes from "prop-types";
 import {Link} from "react-router-dom";
+import parse from "html-react-parser";
 
 function VideoCard({id, title, description, url}) {
     return (
@@ -15,7 +16,7 @@ function VideoCard({id, title, description, url}) {
                 <Card.Title>{title}</Card.Title>
                 <br/>
                 <Card.Text style={{textAlign: "justify"}}>
-                    {description ? description.split('.').slice(0, 5).join('.') : ""}
+                    {description ? parse(description.split("</p>")[0] + "</p>") : ""}
                 </Card.Text>
                 <br/>
                 <Link to={`/videos/${id}`}>

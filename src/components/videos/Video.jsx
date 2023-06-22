@@ -3,6 +3,7 @@ import {Link, useParams} from "react-router-dom";
 import data from "../../assets/data.json";
 import UnderConstruction from "../errors/UnderConstruction.jsx";
 import Button from "react-bootstrap/Button";
+import parse from 'html-react-parser';
 
 const Video = () => {
 
@@ -34,7 +35,7 @@ const Video = () => {
                                     {video.title}
                                 </h1>
                                 <p className="video-description">
-                                    {video.description}
+                                    {video.description ? parse(video.description) : ""}
                                 </p>
                             </Col>
                             <Col md={6} className="embedded-video embed-responsive embed-responsive-16by9">
