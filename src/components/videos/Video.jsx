@@ -4,6 +4,7 @@ import data from "../../assets/data.json";
 import UnderConstruction from "../errors/UnderConstruction.jsx";
 import Button from "react-bootstrap/Button";
 import parse from 'html-react-parser';
+import {CgFileDocument, CgMusicNote} from "react-icons/cg";
 
 const Video = () => {
 
@@ -11,21 +12,27 @@ const Video = () => {
 
     if (data.videos && data.videos.length > 0) {
         const video = data.videos.find(v => (v.id).toString() === id)
-        const lyrics = video && video.lyrics && video.lyrics.map(l =>
-            <span key={l.id}><Link to={`/lyrics/${l.id}`} key={l.id}>
-                <Button variant="primary">
-                    {l.title}
-                </Button>
-            </Link>&nbsp;</span>
-        );
-        const sheets = video && video.sheets && video.sheets.map(s =>
-            <span key={s.id}><Link to={`/sheets/${s.id}`} key={s.id}>
-                <Button variant="outline-primary" className="video-button">
-                    {s.title}
-                </Button>
-            </Link>&nbsp;</span>
-        );
         if (video) {
+            let lyrics;
+            if (video.lyrics && video.lyrics.length > 0) {
+                const l = video.lyrics[0]
+                lyrics = <Link to={`/lyrics/${l.id}`}>
+                    <Button variant="primary">
+                        <CgFileDocument/> &nbsp;
+                        Lyrics
+                    </Button>
+                </Link>;
+            }
+            let sheet
+            if (video.sheets && video.sheets.length > 0) {
+                const s = video.sheets[0]
+                sheet = <Link to={`/sheets/${s.id}`}>
+                    <Button variant="primary">
+                        <CgMusicNote/> &nbsp;
+                        Notes/Tabs
+                    </Button>
+                </Link>;
+            }
             return (
                 <Container fluid className="video-content">
                     <Container>
@@ -45,10 +52,12 @@ const Video = () => {
                                             allowFullScreen></iframe>
                                 </div>
                                 <br/>
-                                {lyrics}
-                                <br/>
-                                <br/>
-                                {sheets}
+                                <div>
+                                    {lyrics}
+                                    {"\n"}
+                                    {"\n"}
+                                    {sheet}
+                                </div>
                             </Col>
                         </Row>
                     </Container>
