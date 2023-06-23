@@ -1,7 +1,7 @@
 import {render} from "@testing-library/react";
 import Home from "../components/Home/Home.jsx";
 
-describe("Home Component", function () {
+describe("Home Component", () => {
 
     it("should have epigraph", function () {
         const {container} = render(<Home/>);
@@ -10,14 +10,14 @@ describe("Home Component", function () {
             .toMatchInlineSnapshot(`""Every bad situation is a blues song waiting to happen."Amy Winehouse"`);
     });
 
-    it("should have greeting", function () {
+    it("should have greeting", () => {
         const {container} = render(<Home/>);
         const greeting = container.getElementsByClassName("home-greeting")[0];
         expect(greeting.textContent)
             .toContain("Hey, Blues and Rock fans!");
     });
 
-    it("should have introduction", function () {
+    it("should have introduction", () => {
         const {container} = render(<Home/>);
         const introduction = container.getElementsByClassName("home-about-body")[0];
         expect(introduction.textContent)
@@ -26,13 +26,13 @@ describe("Home Component", function () {
             .toContain("Stay tuned and take care!!! Peace ✌.");
     });
 
-    it("should have photo", function () {
+    it("should have photo", () => {
         const {container} = render(<Home/>);
         const photo = container.getElementsByClassName("home-photo")[0];
         expect(photo).toBeVisible();
     });
 
-    it("should have links to social media", function () {
+    it("should have links to social media", () => {
         const {container} = render(<Home/>);
         const social = container.getElementsByClassName("home-about-social")[0];
         expect(social.textContent).toContain("FIND ME ON");

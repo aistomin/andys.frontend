@@ -16,7 +16,7 @@ function VideoCard({id, title, description, url}) {
                 <Card.Title>{title}</Card.Title>
                 <br/>
                 <Card.Text style={{textAlign: "justify"}}>
-                    {description ? parse(description.split("</p>")[0] + "</p>") : ""}
+                    {description ? parse(description.split("</p>")[0].replace("<p>", "")) : ""}
                 </Card.Text>
                 <br/>
                 <Link to={`/videos/${id}`}>
