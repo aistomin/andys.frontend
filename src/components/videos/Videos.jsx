@@ -6,9 +6,9 @@ import VideoCard from "./VideoCard.jsx";
 
 const Videos = () => {
     if (data.videos && data.videos.length > 0) {
-        return <Container fluid className="videos-section">
+        return <Container fluid className="videos-content">
             <Container>
-                <h1 className="project-heading">
+                <h1 className="videos-heading">
                     My latest <strong className="purple">Videos</strong>
                 </h1>
                 <Row style={{justifyContent: "center", paddingBottom: "10px"}}>
