@@ -16,15 +16,22 @@ import Home from "./components/Home/Home.jsx";
 import UnderConstruction from "./components/errors/UnderConstruction.jsx";
 import Videos from "./components/videos/Videos.jsx";
 import Video from "./components/videos/Video.jsx";
+import {useStoreActions} from "easy-peasy";
+import data from "./assets/data.json"
 
 function App() {
+
+    const setVideos = useStoreActions((actions) => actions.setVideos);
+
     const [load, updateLoad] = useState(true);
 
     useEffect(() => {
-        const timer = setTimeout(() => {
-            updateLoad(false);
-        }, 0);
-        return () => clearTimeout(timer);
+        // todo: Issue-#28 Load the data from server.
+        console.log("Load videos .....")
+        const videos = data.videos
+        setVideos(videos && videos.length > 0 ? videos : []);
+        updateLoad(false)
+        console.log("Videos are loaded.")
     }, []);
 
     return (
