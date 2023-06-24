@@ -18,10 +18,12 @@ import Videos from "./components/videos/Videos.jsx";
 import Video from "./components/videos/Video.jsx";
 import {useStoreActions} from "easy-peasy";
 import data from "./assets/data.json"
+import NotesSheet from "./components/notes/NotesSheet.jsx";
 
 function App() {
 
     const setVideos = useStoreActions((actions) => actions.setVideos);
+    const setSheets = useStoreActions((actions) => actions.setSheets);
 
     const [load, updateLoad] = useState(true);
 
@@ -30,6 +32,8 @@ function App() {
         console.log("Load videos .....")
         const videos = data.videos
         setVideos(videos && videos.length > 0 ? videos : []);
+        const sheets = data.sheets
+        setSheets(sheets && sheets.length > 0 ? sheets : []);
         updateLoad(false)
         console.log("Videos are loaded.")
     }, []);
@@ -46,7 +50,10 @@ function App() {
                         <Route index element={<Videos/>}/>
                         <Route path=":id" element={<Video/>}/>
                     </Route>
-                    <Route path="/notes" element={<UnderConstruction/>}/>
+                    <Route path="/notes">
+                        <Route index element={<UnderConstruction/>}/>
+                        <Route path=":id" element={<NotesSheet/>}/>
+                    </Route>
                     <Route path="/lyrics" element={<UnderConstruction/>}/>
                     <Route path="*" element={<Navigate to="/"/>}/>
                 </Routes>

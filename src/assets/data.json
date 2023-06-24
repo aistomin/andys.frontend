@@ -10,21 +10,13 @@
       "lyrics": [
         {
           "id": 101,
-          "title": "Black Hole Paradox. Lyrics."
-        },
-        {
-          "id": 102,
-          "title": "Black Hole Paradox. Alternative lyrics."
+          "title": "Black Hole Paradox."
         }
       ],
       "sheets": [
         {
           "id": 111,
-          "title": "Black Hole Paradox. Music sheet."
-        },
-        {
-          "id": 112,
-          "title": "Black Hole Paradox. Alternative music sheet."
+          "title": "Black Hole Paradox."
         }
       ]
     },
@@ -33,7 +25,19 @@
       "title": "What Happens When The Planets Align? | Neil deGrasse Tyson Explains…",
       "url": "https://www.youtube.com/embed/ugsz0ld4VGw",
       "createdOn": "2023-06-10",
-      "publishedOn": "2023-06-11"
+      "publishedOn": "2023-06-11",
+      "lyrics": [
+        {
+          "id": 201,
+          "title": "What Happens When The Planets Align?"
+        }
+      ],
+      "sheets": [
+        {
+          "id": 211,
+          "title": "What Happens When The Planets Align?"
+        }
+      ]
     },
     {
       "id": 3,
@@ -50,6 +54,20 @@
       "url": "https://www.youtube.com/embed/as49_LNf3VA",
       "createdOn": "2023-06-11",
       "publishedOn": "2023-06-12"
+    }
+  ],
+  "sheets": [
+    {
+      "id": 111,
+      "title": "Black Hole Paradox.",
+      "gpUrl": "https://drive.google.com/file/d/1UDR85h6V7SR4Az2ObFXlHv5IHrJGBxUJ/view?usp=drive_link",
+      "pdfUrl": "https://drive.google.com/file/d/1n-WyXWkPH71oQ6iV1V-H9Gj8CBkbH4vv"
+    },
+    {
+      "id": 211,
+      "title": "What Happens When The Planets Align?",
+      "gpUrl": "https://drive.google.com/file/d/1UDR85h6V7SR4Az2ObFXlHv5IHrJGBxUJ/view?usp=drive_link",
+      "pdfUrl": "https://drive.google.com/file/d/1n-WyXWkPH71oQ6iV1V-H9Gj8CBkbH4vv"
     }
   ]
 }
