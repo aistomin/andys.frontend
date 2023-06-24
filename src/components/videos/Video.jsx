@@ -1,10 +1,10 @@
 import {Col, Container, Row} from "react-bootstrap";
 import {Link, useParams} from "react-router-dom";
-import UnderConstruction from "../errors/UnderConstruction.jsx";
 import Button from "react-bootstrap/Button";
 import parse from 'html-react-parser';
 import {CgFileDocument, CgMusicNote, CgYoutube} from "react-icons/cg";
 import {useStoreState} from "easy-peasy";
+import NotFound from "../errors/NotFound.jsx";
 
 const Video = () => {
 
@@ -72,8 +72,7 @@ const Video = () => {
             </Container>
         );
     } else {
-        // todo: Issue #49. Show proper error when video is not found.
-        return <UnderConstruction/>
+        return <NotFound/>
     }
 };
 
