@@ -17,7 +17,7 @@ const Video = () => {
         let lyrics;
         if (video.lyrics && video.lyrics.length > 0) {
             const l = video.lyrics[0]
-            lyrics = <Link to={`/lyrics/${l.id}`}>
+            lyrics = <Link to={`/lyrics/${l.id}`} style={{paddingLeft: '2em'}}>
                 <Button variant="primary" style={{maxWidth: "250px"}}>
                     <CgFileDocument/> &nbsp;
                     Song Lyrics
@@ -27,7 +27,7 @@ const Video = () => {
         let sheet
         if (video.sheets && video.sheets.length > 0) {
             const s = video.sheets[0]
-            sheet = <Link to={`/sheets/${s.id}`} style={{paddingLeft: '2em'}}>
+            sheet = <Link to={`/notes/${s.id}`} style={{paddingLeft: '2em'}}>
                 <Button variant="primary" style={{maxWidth: "250px"}}>
                     <CgMusicNote/> &nbsp;
                     Notes/Tabs
@@ -46,17 +46,17 @@ const Video = () => {
                             </div>
                             <br/>
                             <div>
-                                {lyrics}
-                                {sheet}
-                                <span style={{paddingLeft: '2em'}}>
-                                        <Button
-                                            variant="primary"
-                                            style={{maxWidth: "250px"}}
-                                            href={video.url}>
+                                <span>
+                                    <Button
+                                        variant="primary"
+                                        style={{maxWidth: "250px"}}
+                                        href={video.url}>
                                             <CgYoutube/> &nbsp;
-                                            Go to YouTube
-                                        </Button>
-                                    </span>
+                                        Go to YouTube
+                                    </Button>
+                                </span>
+                                {sheet}
+                                {lyrics}
                             </div>
                         </Col>
                         <Col md={6}>
