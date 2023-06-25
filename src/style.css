@@ -752,7 +752,7 @@ button:focus {
 
 .videos-content {
     position: relative !important;
-    padding: 7rem 0 2rem !important;
+    padding: 9rem 0 2rem !important;
     background-image: var(--section-background-color) !important;
 }
 
@@ -802,7 +802,7 @@ button:focus {
 
 .music-sheets-content {
     position: relative !important;
-    padding: 7rem 0 2rem !important;
+    padding: 9rem 0 2rem !important;
     background-image: var(--section-background-color) !important;
 }
 
@@ -815,6 +815,22 @@ button:focus {
 .music-sheet-card {
     padding: 50px 25px !important;
     height: auto !important;
+}
+
+/* --------- */
+/* Lyrics */
+/* --------- */
+.song-lyrics {
+    position: relative !important;
+    padding: 9rem 0 2rem !important;
+    background-image: var(--section-background-color) !important;
+    color: white !important;
+}
+
+.lyrics-content {
+    position: relative !important;
+    padding: 9rem 0 2rem !important;
+    background-image: var(--section-background-color) !important;
 }
 
 
