@@ -13,7 +13,6 @@ import "./style.css";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
 import Home from "./components/home/Home.jsx";
-import UnderConstruction from "./components/errors/UnderConstruction.jsx";
 import Videos from "./components/videos/Videos.jsx";
 import Video from "./components/videos/Video.jsx";
 import {useStoreActions} from "easy-peasy";
@@ -21,6 +20,7 @@ import data from "./assets/data.json"
 import NotesSheet from "./components/notes/NotesSheet.jsx";
 import Notes from "./components/notes/Notes.jsx";
 import SongLyrics from "./components/lyrics/SongLyrics.jsx";
+import Lyrics from "./components/lyrics/Lyrics.jsx";
 
 function App() {
 
@@ -60,7 +60,7 @@ function App() {
                         <Route path=":id" element={<NotesSheet/>}/>
                     </Route>
                     <Route path="/lyrics">
-                        <Route index element={<UnderConstruction/>}/>
+                        <Route index element={<Lyrics/>}/>
                         <Route path=":id" element={<SongLyrics/>}/>
                     </Route>
                     <Route path="*" element={<Navigate to="/"/>}/>

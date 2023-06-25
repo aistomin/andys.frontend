@@ -15,7 +15,7 @@ const SongLyrics = () => {
 
     if (lyrics) {
         return (
-            <Container fluid className="music-sheet">
+            <Container fluid className="song-lyrics">
                 <Row style={{justifyContent: "center", position: "relative"}}>
                     <a href={lyrics.pdfUrl} target="_blank" rel="noopener noreferrer" download>
                         <Button variant="primary">
