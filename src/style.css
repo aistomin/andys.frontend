@@ -851,3 +851,9 @@ button:focus {
     overflow: hidden !important;
     box-shadow: 0 4px 4px 5px rgba(129, 72, 144, 0.561) !important;
 }
+
+.big-pdf-preview {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    justify-content: center;
+}

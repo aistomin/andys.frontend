@@ -6,18 +6,18 @@ import Button from "react-bootstrap/Button";
 import {AiOutlineDownload} from "react-icons/ai";
 import NotFound from "../errors/NotFound.jsx";
 
-const NotesSheet = () => {
+const SongLyrics = () => {
 
     const {id} = useParams()
 
-    const getSheetById = useStoreState((state) => state.getSheetById);
-    const sheet = getSheetById(id)
+    const getLyricsById = useStoreState((state) => state.getLyricsById);
+    const lyrics = getLyricsById(id)
 
-    if (sheet) {
+    if (lyrics) {
         return (
             <Container fluid className="music-sheet">
                 <Row style={{justifyContent: "center", position: "relative"}}>
-                    <a href={sheet.pdfUrl} target="_blank" rel="noopener noreferrer" download>
+                    <a href={lyrics.pdfUrl} target="_blank" rel="noopener noreferrer" download>
                         <Button variant="primary">
                             <AiOutlineDownload/>
                             &nbsp;Download PDF
@@ -25,16 +25,8 @@ const NotesSheet = () => {
                     </a>
                 </Row>
                 <Row className="big-pdf-preview">
-                    <iframe src={`${sheet.pdfUrl}/preview`} width="640" height="480">
+                    <iframe src={`${lyrics.pdfUrl}/preview`} width="640" height="480">
                     </iframe>
-                </Row>
-                <Row style={{justifyContent: "center", position: "relative"}}>
-                    <a href={sheet.gpUrl} target="_blank" rel="noopener noreferrer" download>
-                        <Button variant="primary">
-                            <AiOutlineDownload/>
-                            &nbsp;Download GuitarPro File
-                        </Button>
-                    </a>
                 </Row>
             </Container>
         );
@@ -43,4 +35,4 @@ const NotesSheet = () => {
     }
 };
 
-export default NotesSheet;
+export default SongLyrics;

@@ -16,4 +16,12 @@ export default createStore({
     getSheetById: computed((state) => {
         return (id) => state.sheets.find(sheet => (sheet.id).toString() === id);
     }),
+
+    lyrics: [],
+    setLyrics: action((state, payload) => {
+        state.lyrics = payload;
+    }),
+    getLyricsById: computed((state) => {
+        return (id) => state.lyrics.find(song => (song.id).toString() === id);
+    }),
 });
