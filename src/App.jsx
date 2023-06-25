@@ -12,7 +12,7 @@ import ScrollToTop from "./components/ScrollToTop.jsx";
 import "./style.css";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Home from "./components/Home/Home.jsx";
+import Home from "./components/home/Home.jsx";
 import UnderConstruction from "./components/errors/UnderConstruction.jsx";
 import Videos from "./components/videos/Videos.jsx";
 import Video from "./components/videos/Video.jsx";

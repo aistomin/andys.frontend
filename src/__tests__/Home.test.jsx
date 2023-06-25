@@ -1,5 +1,5 @@
 import {render} from "@testing-library/react";
-import Home from "../components/Home/Home.jsx";
+import Home from "../components/home/Home.jsx";
 
 describe("Home Component", () => {
 
