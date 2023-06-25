@@ -75,5 +75,23 @@
       "createdOn": "2023-06-10",
       "publishedOn": "2023-06-11"
     }
+  ],
+  "lyrics": [
+    {
+      "id": 101,
+      "title": "Black Hole Paradox.",
+      "pdfUrl": "https://drive.google.com/file/d/1ZP_dcg9NPA5oACZWLBwH8SPzAckCjw4y",
+      "contentDescription": "PDF",
+      "createdOn": "2019-07-04",
+      "publishedOn": "2023-06-10"
+    },
+    {
+      "id": 201,
+      "title": "What Happens When The Planets Align?",
+      "pdfUrl": "https://drive.google.com/file/d/1ZP_dcg9NPA5oACZWLBwH8SPzAckCjw4y",
+      "contentDescription": "PDF",
+      "createdOn": "2023-06-10",
+      "publishedOn": "2023-06-11"
+    }
   ]
 }

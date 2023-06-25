@@ -20,23 +20,27 @@ import {useStoreActions} from "easy-peasy";
 import data from "./assets/data.json"
 import NotesSheet from "./components/notes/NotesSheet.jsx";
 import Notes from "./components/notes/Notes.jsx";
+import SongLyrics from "./components/lyrics/SongLyrics.jsx";
 
 function App() {
 
     const setVideos = useStoreActions((actions) => actions.setVideos);
     const setSheets = useStoreActions((actions) => actions.setSheets);
+    const setLyrics = useStoreActions((actions) => actions.setLyrics);
 
     const [load, updateLoad] = useState(true);
 
     useEffect(() => {
         // todo: Issue-#28 Load the data from server.
-        console.log("Load videos .....")
+        console.log("Load data .....")
         const videos = data.videos
         setVideos(videos && videos.length > 0 ? videos : []);
         const sheets = data.sheets
         setSheets(sheets && sheets.length > 0 ? sheets : []);
+        const lyrics = data.lyrics
+        setLyrics(lyrics && lyrics.length > 0 ? lyrics : []);
         updateLoad(false)
-        console.log("Videos are loaded.")
+        console.log("Data are loaded.")
     }, []);
 
     return (
@@ -55,7 +59,10 @@ function App() {
                         <Route index element={<Notes/>}/>
                         <Route path=":id" element={<NotesSheet/>}/>
                     </Route>
-                    <Route path="/lyrics" element={<UnderConstruction/>}/>
+                    <Route path="/lyrics">
+                        <Route index element={<UnderConstruction/>}/>
+                        <Route path=":id" element={<SongLyrics/>}/>
+                    </Route>
                     <Route path="*" element={<Navigate to="/"/>}/>
                 </Routes>
                 <Footer/>
