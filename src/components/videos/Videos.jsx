@@ -1,7 +1,9 @@
 import UnderConstruction from "../errors/UnderConstruction.jsx";
 import {Col, Container, Row} from "react-bootstrap";
-import VideoCard from "./VideoCard.jsx";
 import {useStoreState} from "easy-peasy";
+import ItemCard from "../commons/ItemCard.jsx";
+import {AiOutlineFundProjectionScreen} from "react-icons/ai";
+import parse from "html-react-parser";
 
 const Videos = () => {
 
@@ -18,12 +20,13 @@ const Videos = () => {
                         videos
                             .sort((a, b) => Date.parse(b.publishedOn) - Date.parse(a.publishedOn))
                             .map(video =>
-                                <Col md={4} className="video-card" key={video.id}>
-                                    <VideoCard
-                                        id={video.id}
+                                <Col md={4} className="item-card" key={video.id}>
+                                    <ItemCard
+                                        icon={<AiOutlineFundProjectionScreen style={{marginBottom: "2px"}}/>}
                                         title={video.title}
-                                        description={video.description}
-                                        url={video.url}
+                                        description={video.description ? parse(video.description.split("</p>")[0].replace("<p>", "")) : ""}
+                                        previewUrl={video.url}
+                                        detailsUrl={`/videos/${video.id}`}
                                     />
                                 </Col>
                             )

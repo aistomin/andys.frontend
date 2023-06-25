@@ -2,24 +2,23 @@ import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import PropTypes from "prop-types";
 import {Link} from "react-router-dom";
-import {CgMusicNote} from "react-icons/cg";
 
-function NotesCard({id, title, description, url}) {
+function ItemCard({icon, title, description, previewUrl, detailsUrl}) {
     return (
-        <Card className="card-view">
+        <Card className="item-card-view">
             <div className="ratio ratio-16x9">
-                <iframe src={`${url}/preview`}/>
+                <iframe className="embed-responsive-item" src={previewUrl} allowFullScreen/>
             </div>
             <Card.Body>
                 <Card.Title>{title}</Card.Title>
                 <br/>
                 <Card.Text style={{textAlign: "justify"}}>
-                    Content: {description}
+                    {description}
                 </Card.Text>
                 <br/>
-                <Link to={`/notes/${id}`}>
+                <Link to={detailsUrl}>
                     <Button variant="primary">
-                        <CgMusicNote style={{marginBottom: "2px"}}/> Details
+                        {icon}{" "} Details
                     </Button>
                 </Link>
             </Card.Body>
@@ -27,11 +26,12 @@ function NotesCard({id, title, description, url}) {
     );
 }
 
-NotesCard.propTypes = {
-    id: PropTypes.number,
+ItemCard.propTypes = {
+    icon: PropTypes.element,
     title: PropTypes.string,
     description: PropTypes.string,
-    url: PropTypes.string
+    previewUrl: PropTypes.string,
+    detailsUrl: PropTypes.string
 };
 
-export default NotesCard;
+export default ItemCard;
