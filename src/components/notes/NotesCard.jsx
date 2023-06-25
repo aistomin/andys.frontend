@@ -2,29 +2,24 @@ import Card from "react-bootstrap/Card";
 import Button from "react-bootstrap/Button";
 import PropTypes from "prop-types";
 import {Link} from "react-router-dom";
-import parse from "html-react-parser";
-import {AiOutlineFundProjectionScreen} from "react-icons/ai";
+import {CgMusicNote} from "react-icons/cg";
 
-function VideoCard({id, title, description, url}) {
+function NotesCard({id, title, description, url}) {
     return (
         <Card className="card-view">
             <div className="ratio ratio-16x9">
-                <iframe title="Embeds Page" className="embed-responsive-item"
-                        src={url}
-                        allowFullScreen></iframe>
+                <iframe src={`${url}/preview`}/>
             </div>
             <Card.Body>
                 <Card.Title>{title}</Card.Title>
                 <br/>
                 <Card.Text style={{textAlign: "justify"}}>
-                    {description ? parse(description.split("</p>")[0].replace("<p>", "")) : ""}
+                    Content: {description}
                 </Card.Text>
                 <br/>
-                <Link to={`/videos/${id}`}>
+                <Link to={`/notes/${id}`}>
                     <Button variant="primary">
-                        <AiOutlineFundProjectionScreen
-                            style={{marginBottom: "2px"}}
-                        />{" "} Details
+                        <CgMusicNote style={{marginBottom: "2px"}}/> Details
                     </Button>
                 </Link>
             </Card.Body>
@@ -32,11 +27,11 @@ function VideoCard({id, title, description, url}) {
     );
 }
 
-VideoCard.propTypes = {
+NotesCard.propTypes = {
     id: PropTypes.number,
     title: PropTypes.string,
     description: PropTypes.string,
     url: PropTypes.string
 };
 
-export default VideoCard;
+export default NotesCard;

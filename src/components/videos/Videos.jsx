@@ -18,7 +18,7 @@ const Videos = () => {
                         videos
                             .sort((a, b) => Date.parse(b.publishedOn) - Date.parse(a.publishedOn))
                             .map(video =>
-                                <Col md={4} className="project-card" key={video.id}>
+                                <Col md={4} className="video-card" key={video.id}>
                                     <VideoCard
                                         id={video.id}
                                         title={video.title}

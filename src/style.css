@@ -775,7 +775,7 @@ button:focus {
     height: auto !important;
 }
 
-.video-card-view {
+.card-view {
     box-shadow: 0 4px 5px 3px rgba(119, 53, 136, 0.459) !important;
     color: white !important;
     background-color: transparent !important;
@@ -784,7 +784,7 @@ button:focus {
     height: 100% !important;
 }
 
-.video-card-view:hover {
+.card-view:hover {
     transform: scale(1.02) !important;
     overflow: hidden !important;
     box-shadow: 0 4px 4px 5px rgba(129, 72, 144, 0.561) !important;
@@ -813,6 +813,23 @@ button:focus {
     padding: 9rem 0 2rem !important;
     background-image: var(--section-background-color) !important;
     color: white !important;
+}
+
+.music-sheets-content {
+    position: relative !important;
+    padding: 7rem 0 2rem !important;
+    background-image: var(--section-background-color) !important;
+}
+
+.music-sheets-heading {
+    color: white !important;
+    font-size: 2.3em !important;
+    font-weight: 500 !important;
+}
+
+.music-sheet-card {
+    padding: 50px 25px !important;
+    height: auto !important;
 }
 
 
