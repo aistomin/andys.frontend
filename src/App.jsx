@@ -12,13 +12,14 @@ import ScrollToTop from "./components/ScrollToTop.jsx";
 import "./style.css";
 import "./App.css";
 import "bootstrap/dist/css/bootstrap.min.css";
-import Home from "./components/Home/Home.jsx";
+import Home from "./components/home/Home.jsx";
 import UnderConstruction from "./components/errors/UnderConstruction.jsx";
 import Videos from "./components/videos/Videos.jsx";
 import Video from "./components/videos/Video.jsx";
 import {useStoreActions} from "easy-peasy";
 import data from "./assets/data.json"
 import NotesSheet from "./components/notes/NotesSheet.jsx";
+import Notes from "./components/notes/Notes.jsx";
 
 function App() {
 
@@ -51,7 +52,7 @@ function App() {
                         <Route path=":id" element={<Video/>}/>
                     </Route>
                     <Route path="/notes">
-                        <Route index element={<UnderConstruction/>}/>
+                        <Route index element={<Notes/>}/>
                         <Route path=":id" element={<NotesSheet/>}/>
                     </Route>
                     <Route path="/lyrics" element={<UnderConstruction/>}/>
