@@ -22,7 +22,6 @@
     "react-icons": "^4.9.0",
     "react-parallax-tilt": "^1.7.147",
     "react-router-dom": "^6.13.0",
-    "react-tsparticles": "^2.10.1",
     "typewriter-effect": "^2.20.1"
   },
   "devDependencies": {
