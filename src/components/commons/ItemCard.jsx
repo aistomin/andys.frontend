@@ -10,14 +10,14 @@ function ItemCard({icon, title, description, previewUrl, detailsUrl}) {
                 <iframe className="embed-responsive-item" src={previewUrl} allowFullScreen/>
             </div>
             <Card.Body>
-                <Card.Title>{title}</Card.Title>
+                <Card.Title className="card-title">{title}</Card.Title>
                 <br/>
-                <Card.Text style={{textAlign: "justify"}}>
+                <Card.Text className="card-text" style={{textAlign: "justify"}}>
                     {description}
                 </Card.Text>
                 <br/>
-                <Link to={detailsUrl}>
-                    <Button variant="primary">
+                <Link to={detailsUrl} className="card-link">
+                    <Button variant="primary" className="card-button">
                         {icon}{" "} Details
                     </Button>
                 </Link>
