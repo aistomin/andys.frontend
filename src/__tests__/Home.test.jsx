@@ -36,5 +36,8 @@ describe("Home Component", () => {
         const {container} = render(<Home/>);
         const social = container.getElementsByClassName("home-about-social")[0];
         expect(social.textContent).toContain("FIND ME ON");
+        expect(
+            container.getElementsByClassName("social-icons").length
+        ).toBe(4);
     });
 });
