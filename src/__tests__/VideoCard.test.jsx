@@ -3,7 +3,7 @@ import {fireEvent} from "@testing-library/react";
 
 describe("VideoCard Component", () => {
 
-    it("test rendering", () => {
+    it("should have all the necessary elements", () => {
         const {container, getByRole} = renderAppWithStore();
         const videosMenu = getByRole('link', {name: 'Videos'});
         fireEvent.click(videosMenu);
