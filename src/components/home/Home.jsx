@@ -59,7 +59,7 @@ function Home() {
                                     href="https://www.youtube.com/channel/UCPY0lKHgJuK5XQjVHXGBBSA"
                                     target="_blank"
                                     rel="noreferrer"
-                                    className="icon-colour  home-social-icons"
+                                    className="icon-colour home-social-icons"
                                 >
                                     <AiFillYoutube/>
                                 </a>
@@ -69,7 +69,7 @@ function Home() {
                                     href="https://www.instagram.com/andy.grails"
                                     target="_blank"
                                     rel="noreferrer"
-                                    className="icon-colour  home-social-icons"
+                                    className="icon-colour home-social-icons"
                                 >
                                     <AiFillInstagram/>
                                 </a>
@@ -79,7 +79,7 @@ function Home() {
                                     href="https://www.facebook.com/profile.php?id=100074082643728"
                                     target="_blank"
                                     rel="noreferrer"
-                                    className="icon-colour  home-social-icons"
+                                    className="icon-colour home-social-icons"
                                 >
                                     <AiFillFacebook/>
                                 </a>
@@ -89,7 +89,7 @@ function Home() {
                                     href="https://twitter.com/AndyGrails"
                                     target="_blank"
                                     rel="noreferrer"
-                                    className="icon-colour  home-social-icons"
+                                    className="icon-colour home-social-icons"
                                 >
                                     <AiOutlineTwitter/>
                                 </a>

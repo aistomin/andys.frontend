@@ -1,4 +1,4 @@
-import {render} from "@testing-library/react";
+import {fireEvent, render} from "@testing-library/react";
 import Home from "../components/home/Home.jsx";
 
 describe("Home Component", () => {
@@ -36,5 +36,8 @@ describe("Home Component", () => {
         const {container} = render(<Home/>);
         const social = container.getElementsByClassName("home-about-social")[0];
         expect(social.textContent).toContain("FIND ME ON");
+        expect(
+            container.getElementsByClassName("home-social-icons").length
+        ).toBe(4);
     });
 });
