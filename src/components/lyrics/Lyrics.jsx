@@ -11,7 +11,7 @@ const Lyrics = () => {
     if (lyrics.length > 0) {
         return <Container fluid className="lyrics-content">
             <Container>
-                <h1 className="music-sheets-heading">
+                <h1 className="lyrics-heading">
                     My latest <strong className="purple">Lyrics</strong>
                 </h1>
                 <Row style={{justifyContent: "center", paddingBottom: "10px"}}>
@@ -19,7 +19,7 @@ const Lyrics = () => {
                         lyrics
                             .sort((a, b) => Date.parse(b.publishedOn) - Date.parse(a.publishedOn))
                             .map(song =>
-                                <Col md={4} className="music-sheet-card" key={song.id}>
+                                <Col md={4} className="item-card" key={song.id}>
                                     <ItemCard
                                         icon={<CgFileDocument style={{marginBottom: "2px"}}/>}
                                         title={song.title}

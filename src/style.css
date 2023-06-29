@@ -833,6 +833,12 @@ button:focus {
     background-image: var(--section-background-color) !important;
 }
 
+.lyrics-heading {
+    color: white !important;
+    font-size: 2.3em !important;
+    font-weight: 500 !important;
+}
+
 
 /* --------- */
 /* Errors */
