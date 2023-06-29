@@ -19,7 +19,7 @@ const Notes = () => {
                         notes
                             .sort((a, b) => Date.parse(b.publishedOn) - Date.parse(a.publishedOn))
                             .map(sheet =>
-                                <Col md={4} className="music-sheet-card" key={sheet.id}>
+                                <Col md={4} className="item-card" key={sheet.id}>
                                     <ItemCard
                                         icon={<CgMusicNote style={{marginBottom: "2px"}}/>}
                                         title={sheet.title}
