@@ -41,7 +41,7 @@ const Video = () => {
                         <Col md={6} className="embedded-video embed-responsive embed-responsive-16by9">
                             <div className="ratio ratio-16x9">
                                 <iframe title="Embeds Page" className="embed-responsive-item"
-                                        src={video.url}
+                                        src={`https://www.youtube.com/embed/${video.youtubeId}`}
                                         allowFullScreen></iframe>
                             </div>
                             <br/>
@@ -50,7 +50,8 @@ const Video = () => {
                                     <Button
                                         variant="primary"
                                         style={{maxWidth: "250px"}}
-                                        href={video.url}>
+                                        target="_blank"
+                                        href={`https://www.youtube.com/watch?v=${video.youtubeId}`}>
                                             <CgYoutube/> &nbsp;
                                         Go to YouTube
                                     </Button>

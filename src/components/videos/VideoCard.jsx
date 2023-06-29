@@ -9,7 +9,7 @@ const VideoCard = ({video}) => {
             icon={<AiOutlineFundProjectionScreen style={{marginBottom: "2px"}}/>}
             title={video.title}
             description={video.description ? parse(video.description.split("</p>")[0].replace("<p>", "")) : ""}
-            previewUrl={video.url}
+            previewUrl={`https://www.youtube.com/embed/${video.youtubeId}`}
             detailsUrl={`/videos/${video.id}`}
         />
     );
