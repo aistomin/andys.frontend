@@ -1,8 +1,7 @@
 import UnderConstruction from "../errors/UnderConstruction.jsx";
 import {Col, Container, Row} from "react-bootstrap";
 import {useStoreState} from "easy-peasy";
-import ItemCard from "../commons/ItemCard.jsx";
-import {CgFileDocument} from "react-icons/cg";
+import LyricsCard from "./LyricsCard.jsx";
 
 const Lyrics = () => {
 
@@ -20,13 +19,7 @@ const Lyrics = () => {
                             .sort((a, b) => Date.parse(b.publishedOn) - Date.parse(a.publishedOn))
                             .map(song =>
                                 <Col md={4} className="item-card" key={song.id}>
-                                    <ItemCard
-                                        icon={<CgFileDocument style={{marginBottom: "2px"}}/>}
-                                        title={song.title}
-                                        description={`Content: ${song.contentDescription}`}
-                                        previewUrl={`${song.pdfUrl}/preview`}
-                                        detailsUrl={`/lyrics/${song.id}`}
-                                    />
+                                    <LyricsCard lyrics={song}/>
                                 </Col>
                             )
                     }
