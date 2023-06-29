@@ -1,8 +1,7 @@
 import UnderConstruction from "../errors/UnderConstruction.jsx";
 import {Col, Container, Row} from "react-bootstrap";
 import {useStoreState} from "easy-peasy";
-import ItemCard from "../commons/ItemCard.jsx";
-import {CgMusicNote} from "react-icons/cg";
+import NotesCard from "./NotesCard.jsx";
 
 const Notes = () => {
 
@@ -20,13 +19,7 @@ const Notes = () => {
                             .sort((a, b) => Date.parse(b.publishedOn) - Date.parse(a.publishedOn))
                             .map(sheet =>
                                 <Col md={4} className="item-card" key={sheet.id}>
-                                    <ItemCard
-                                        icon={<CgMusicNote style={{marginBottom: "2px"}}/>}
-                                        title={sheet.title}
-                                        description={`Content: ${sheet.contentDescription}`}
-                                        previewUrl={`${sheet.pdfUrl}/preview`}
-                                        detailsUrl={`/notes/${sheet.id}`}
-                                    />
+                                    <NotesCard sheet={sheet}/>
                                 </Col>
                             )
                     }
