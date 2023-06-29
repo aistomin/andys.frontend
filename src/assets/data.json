@@ -4,7 +4,7 @@
       "id": 1,
       "title": "Black Hole Paradox with Neil deGrasse Tyson & Matt O’Dowd – Cosmic Queries",
       "description": "<p>Duis sit amet quam tempus, aliquet mauris sed, tincidunt est. Suspendisse lacus diam, placerat a velit ut, volutpat eleifend eros. Nunc sapien ipsum, blandit a nulla nec, fermentum dictum velit. Duis congue vel enim ac dapibus. Fusce in vestibulum justo. Fusce bibendum accumsan consequat. Etiam venenatis gravida erat eu hendrerit. Vestibulum ut ipsum nibh. Aliquam quis leo interdum, vulputate mi a, feugiat enim. Mauris eu ante vehicula, finibus enim eget, viverra risus. Vivamus nulla leo, dignissim et enim et, pellentesque hendrerit mauris. Sed sed eros eros. Sed malesuada dolor augue, vel sagittis justo cursus eget.</p>\n\n<p>Praesent porta quam arcu. Mauris arcu metus, consectetur eget pharetra quis, pellentesque in sapien. In feugiat odio at feugiat elementum. Fusce in magna vitae leo vulputate vehicula. Vivamus eu euismod ante, vel feugiat mauris. Morbi pharetra elit et neque viverra consequat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Proin arcu justo, finibus vitae lorem eu, bibendum tempor justo. Aliquam nulla lacus, lacinia quis imperdiet id, pulvinar id lorem. Etiam lacinia metus vitae dolor finibus cursus. In vulputate cursus magna, id hendrerit quam volutpat sit amet. Duis et aliquet nulla. Cras vel sem lacinia, molestie tellus vel, dapibus libero. Mauris sed enim in massa gravida rhoncus in vitae mauris.</p>\n\n<p>In eu convallis dui. Interdum et malesuada fames ac ante ipsum primis in faucibus. Phasellus dignissim arcu et dapibus consequat. In bibendum quam sed venenatis sodales. Aenean sed nunc fermentum, tincidunt nibh vitae, rutrum nulla. Nullam a bibendum est. Integer in condimentum elit. Ut at lorem quis magna auctor venenatis. Nulla ut eros id urna lobortis venenatis. Ut tempus nisi ut dolor gravida, vel laoreet sem efficitur.</p>\n\n<p>Nunc tincidunt ligula vel accumsan tincidunt. Nunc hendrerit, nulla eget auctor pulvinar, orci lorem vulputate lacus, id hendrerit neque nisl a orci. Fusce sit amet diam nisl. Duis hendrerit felis id tortor tempus, a feugiat neque finibus. Nullam eu magna massa. Nunc pulvinar justo quis nisl condimentum, finibus aliquet erat ullamcorper. Ut semper fermentum metus, at varius nisl tincidunt vitae. Mauris scelerisque dui vitae enim ultricies sodales. Nullam eget lacinia urna, vitae rhoncus nibh.</p>\n\n<p>Nullam interdum, tortor condimentum imperdiet dignissim, ex odio convallis urna, congue ornare lectus mi at erat. Sed tincidunt, tellus iaculis euismod pellentesque, leo justo cursus risus, sit amet consequat velit turpis sodales velit. Etiam ultrices porttitor tristique. Nunc malesuada dolor quis elit interdum, et porta erat dictum. Sed aliquam semper purus ut pretium. Vestibulum tristique, ligula eu commodo convallis, nunc turpis blandit ante, id euismod sem lacus nec augue. Quisque et libero odio. Sed sed magna et libero euismod placerat. Vestibulum sed tristique mauris, ac accumsan ipsum. Aliquam vitae massa ligula.</p>",
-      "url": "https://www.youtube.com/embed/OcX7xpxOC2U",
+      "youtubeId": "OcX7xpxOC2U",
       "createdOn": "2019-07-04",
       "publishedOn": "2023-06-10",
       "lyrics": [
@@ -23,7 +23,7 @@
     {
       "id": 2,
       "title": "What Happens When The Planets Align? | Neil deGrasse Tyson Explains…",
-      "url": "https://www.youtube.com/embed/ugsz0ld4VGw",
+      "youtubeId": "ugsz0ld4VGw",
       "createdOn": "2023-06-10",
       "publishedOn": "2023-06-11",
       "lyrics": [
@@ -43,7 +43,7 @@
       "id": 3,
       "title": "Science of Survival with Neil deGrasse Tyson & Dr. Teimojin Tan – Cosmic Queries",
       "description": "<p>P No. 1</p><p>P No. 2</p><p>P No. 3</p>",
-      "url": "https://www.youtube.com/embed/lcCEvMI_Q3o",
+      "youtubeId": "lcCEvMI_Q3o",
       "createdOn": "2023-06-11",
       "publishedOn": "2023-06-25"
     },
@@ -51,7 +51,7 @@
       "id": 4,
       "title": "The Fabric of Spacetime with Neil deGrasse Tyson – Cosmic Queries",
       "description": "",
-      "url": "https://www.youtube.com/embed/as49_LNf3VA",
+      "youtubeId": "as49_LNf3VA",
       "createdOn": "2023-06-11",
       "publishedOn": "2023-06-12"
     }
