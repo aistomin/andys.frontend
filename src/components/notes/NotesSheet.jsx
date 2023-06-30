@@ -18,19 +18,19 @@ const NotesSheet = () => {
             <Container fluid className="music-sheet">
                 <Row style={{justifyContent: "center", position: "relative"}}>
                     <a href={sheet.pdfUrl} target="_blank" rel="noopener noreferrer" download>
-                        <Button variant="primary">
+                        <Button variant="primary" className="notes-sheet-button">
                             <AiOutlineDownload/>
                             &nbsp;Download PDF
                         </Button>
                     </a>
                 </Row>
                 <Row className="big-pdf-preview">
-                    <iframe src={`${sheet.pdfUrl}/preview`} width="640" height="480">
+                    <iframe src={`${sheet.pdfUrl}/preview`} width="640" height="480" className="embed-responsive-item">
                     </iframe>
                 </Row>
                 <Row style={{justifyContent: "center", position: "relative"}}>
                     <a href={sheet.gpUrl} target="_blank" rel="noopener noreferrer" download>
-                        <Button variant="primary">
+                        <Button variant="primary" className="notes-sheet-button">
                             <AiOutlineDownload/>
                             &nbsp;Download GuitarPro File
                         </Button>
