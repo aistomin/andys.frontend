@@ -18,14 +18,14 @@ const SongLyrics = () => {
             <Container fluid className="song-lyrics">
                 <Row style={{justifyContent: "center", position: "relative"}}>
                     <a href={lyrics.pdfUrl} target="_blank" rel="noopener noreferrer" download>
-                        <Button variant="primary">
+                        <Button variant="primary" className="download-lyrics-button">
                             <AiOutlineDownload/>
                             &nbsp;Download PDF
                         </Button>
                     </a>
                 </Row>
                 <Row className="big-pdf-preview">
-                    <iframe src={`${lyrics.pdfUrl}/preview`} width="640" height="480">
+                    <iframe src={`${lyrics.pdfUrl}/preview`} width="640" height="480" className="embed-responsive-item">
                     </iframe>
                 </Row>
             </Container>
