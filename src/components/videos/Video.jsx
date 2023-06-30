@@ -18,7 +18,7 @@ const Video = () => {
         if (video.lyrics && video.lyrics.length > 0) {
             const l = video.lyrics[0]
             lyrics = <Link to={`/lyrics/${l.id}`} style={{paddingLeft: '2em'}}>
-                <Button variant="primary" style={{maxWidth: "250px"}}>
+                <Button variant="primary" style={{maxWidth: "250px"}} className="video-button">
                     <CgFileDocument/> &nbsp;
                     Song Lyrics
                 </Button>
@@ -28,7 +28,7 @@ const Video = () => {
         if (video.sheets && video.sheets.length > 0) {
             const s = video.sheets[0]
             sheet = <Link to={`/notes/${s.id}`} style={{paddingLeft: '2em'}}>
-                <Button variant="primary" style={{maxWidth: "250px"}}>
+                <Button variant="primary" style={{maxWidth: "250px"}} className="video-button">
                     <CgMusicNote/> &nbsp;
                     Notes/Tabs
                 </Button>
@@ -51,7 +51,8 @@ const Video = () => {
                                         variant="primary"
                                         style={{maxWidth: "250px"}}
                                         target="_blank"
-                                        href={`https://www.youtube.com/watch?v=${video.youtubeId}`}>
+                                        href={`https://www.youtube.com/watch?v=${video.youtubeId}`}
+                                        className="video-button">
                                             <CgYoutube/> &nbsp;
                                         Go to YouTube
                                     </Button>

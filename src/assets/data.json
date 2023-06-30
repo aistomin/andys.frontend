@@ -31,12 +31,6 @@
           "id": 201,
           "title": "What Happens When The Planets Align?"
         }
-      ],
-      "sheets": [
-        {
-          "id": 211,
-          "title": "What Happens When The Planets Align?"
-        }
       ]
     },
     {
@@ -45,7 +39,13 @@
       "description": "<p>P No. 1</p><p>P No. 2</p><p>P No. 3</p>",
       "youtubeId": "lcCEvMI_Q3o",
       "createdOn": "2023-06-11",
-      "publishedOn": "2023-06-25"
+      "publishedOn": "2023-06-25",
+      "sheets": [
+        {
+          "id": 211,
+          "title": "What Happens When The Planets Align?"
+        }
+      ]
     },
     {
       "id": 4,
