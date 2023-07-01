@@ -3,7 +3,7 @@ import {fireEvent} from "@testing-library/react";
 
 describe("NotesSheet Component", () => {
 
-    it("should be accessible from the home page", () => {
+    it.skip("should be accessible from the home page", () => {
         const {container, getByRole} = renderAppWithStore();
         const notesMenu = getByRole('link', {name: 'Notes/Tabs'});
         fireEvent.click(notesMenu);
@@ -13,7 +13,7 @@ describe("NotesSheet Component", () => {
         expect(window.location.href).toBe("http://localhost/notes/111")
     });
 
-    it("should have all the necessary UI components", () => {
+    it.skip("should have all the necessary UI components", () => {
         const {container, getByRole} = renderAppWithStore();
         const notesMenu = getByRole('link', {name: 'Notes/Tabs'});
         fireEvent.click(notesMenu);

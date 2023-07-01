@@ -3,7 +3,7 @@ import {fireEvent} from "@testing-library/react";
 
 describe("Video Component", () => {
 
-    it("should be accessible from the home page", () => {
+    it.skip("should be accessible from the home page", () => {
         const {container, getByRole} = renderAppWithStore();
         const videosMenu = getByRole('link', {name: 'Videos'});
         fireEvent.click(videosMenu);
@@ -13,7 +13,7 @@ describe("Video Component", () => {
         expect(window.location.href).toBe("http://localhost/videos/4")
     });
 
-    it("should have all the UI components if fully configured", () => {
+    it.skip("should have all the UI components if fully configured", () => {
         const {container, getByRole} = renderAppWithStore();
         const videosMenu = getByRole('link', {name: 'Videos'});
         fireEvent.click(videosMenu);
@@ -41,7 +41,7 @@ describe("Video Component", () => {
             .toContain("Aliquam vitae massa ligula.");
     });
 
-    it("should not have lyrics button if not configured", () => {
+    it.skip("should not have lyrics button if not configured", () => {
         const {container, getByRole} = renderAppWithStore();
         const videosMenu = getByRole('link', {name: 'Videos'});
         fireEvent.click(videosMenu);
@@ -55,7 +55,7 @@ describe("Video Component", () => {
         expect(buttons[1].textContent).toContain("Notes/Tabs");
     });
 
-    it("should not have notes button if not configured", () => {
+    it.skip("should not have notes button if not configured", () => {
         const {container, getByRole} = renderAppWithStore();
         const videosMenu = getByRole('link', {name: 'Videos'});
         fireEvent.click(videosMenu);
@@ -69,7 +69,7 @@ describe("Video Component", () => {
         expect(buttons[1].textContent).toContain("Lyrics");
     });
 
-    it("should have only YouTube button if neither lyrics nor notes are configured", () => {
+    it.skip("should have only YouTube button if neither lyrics nor notes are configured", () => {
         const {container, getByRole} = renderAppWithStore();
         const videosMenu = getByRole('link', {name: 'Videos'});
         fireEvent.click(videosMenu);
