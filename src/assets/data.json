@@ -1,5 +1,5 @@
 {
-  "videos": [
+  "videos-fake": [
     {
       "id": 1,
       "title": "Black Hole Paradox with Neil deGrasse Tyson & Matt O’Dowd – Cosmic Queries",
@@ -56,7 +56,7 @@
       "publishedOn": "2023-06-12"
     }
   ],
-  "sheets": [
+  "sheets-fake": [
     {
       "id": 111,
       "title": "Black Hole Paradox.",
@@ -76,7 +76,7 @@
       "publishedOn": "2023-06-11"
     }
   ],
-  "lyrics": [
+  "lyrics-fake": [
     {
       "id": 101,
       "title": "Black Hole Paradox.",

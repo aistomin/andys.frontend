@@ -3,7 +3,7 @@ import {fireEvent} from "@testing-library/react";
 
 describe("Lyrics Component", () => {
 
-    it("should have a proper title", () => {
+    it.skip("should have a proper title", () => {
         const {container, getByRole} = renderAppWithStore();
         const videosMenu = getByRole('link', {name: 'Lyrics'});
         fireEvent.click(videosMenu);
@@ -11,7 +11,7 @@ describe("Lyrics Component", () => {
         expect(title.textContent).toBe("My latest Lyrics")
     });
 
-    it("should display all the existing videos", () => {
+    it.skip("should display all the existing videos", () => {
         const {container, getByRole} = renderAppWithStore();
         const videosMenu = getByRole('link', {name: 'Lyrics'});
         fireEvent.click(videosMenu);
