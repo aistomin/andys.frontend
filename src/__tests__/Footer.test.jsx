@@ -6,7 +6,7 @@ describe("Footer Component", () => {
         const {container} = renderAppWithStore();
         const credits = container.getElementsByClassName('footer-credits');
         expect(credits[0].textContent)
-            .toMatchInlineSnapshot(`"Developers: Andrej, Soumyajit. Designers: Amonrat, LAFS"`);
+            .toMatchInlineSnapshot(`"Developers: Andrej, Soumyajit. Designers: Josethestoryteller, Mocho"`);
     });
 
     it("should have correct copyright", () => {
