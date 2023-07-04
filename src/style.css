@@ -750,18 +750,6 @@ button:focus {
 /* Videos */
 /* --------- */
 
-.videos-content {
-    position: relative !important;
-    padding: 9rem 0 2rem !important;
-    background-image: var(--section-background-color) !important;
-}
-
-.videos-heading {
-    color: white !important;
-    font-size: 2.3em !important;
-    font-weight: 500 !important;
-}
-
 .video-content {
     padding: 9rem 0 2rem !important;
     color: whitesmoke;
@@ -800,18 +788,6 @@ button:focus {
     color: white !important;
 }
 
-.music-sheets-content {
-    position: relative !important;
-    padding: 9rem 0 2rem !important;
-    background-image: var(--section-background-color) !important;
-}
-
-.music-sheets-heading {
-    color: white !important;
-    font-size: 2.3em !important;
-    font-weight: 500 !important;
-}
-
 .music-sheet-card {
     padding: 50px 25px !important;
     height: auto !important;
@@ -827,19 +803,6 @@ button:focus {
     color: white !important;
 }
 
-.lyrics-content {
-    position: relative !important;
-    padding: 9rem 0 2rem !important;
-    background-image: var(--section-background-color) !important;
-}
-
-.lyrics-heading {
-    color: white !important;
-    font-size: 2.3em !important;
-    font-weight: 500 !important;
-}
-
-
 /* --------- */
 /* Errors */
 /* --------- */
@@ -852,6 +815,18 @@ button:focus {
 /* --------- */
 /* Commons */
 /* --------- */
+
+.page-content {
+    position: relative !important;
+    padding: 9rem 0 2rem !important;
+    background-image: var(--section-background-color) !important;
+}
+
+.page-heading {
+    color: white !important;
+    font-size: 2.3em !important;
+    font-weight: 500 !important;
+}
 
 .item-card {
     padding: 50px 25px !important;

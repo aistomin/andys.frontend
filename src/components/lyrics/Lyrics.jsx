@@ -8,9 +8,9 @@ const Lyrics = () => {
     const lyrics = useStoreState((state) => state.lyrics);
 
     if (lyrics.length > 0) {
-        return <Container fluid className="lyrics-content">
+        return <Container fluid className="page-content">
             <Container>
-                <h1 className="lyrics-heading">
+                <h1 className="page-heading">
                     My latest <strong className="purple">Lyrics</strong>
                 </h1>
                 <Row style={{justifyContent: "center", paddingBottom: "10px"}}>

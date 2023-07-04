@@ -8,9 +8,9 @@ const Notes = () => {
     const notes = useStoreState((state) => state.sheets);
 
     if (notes.length > 0) {
-        return <Container fluid className="music-sheets-content">
+        return <Container fluid className="page-content">
             <Container>
-                <h1 className="music-sheets-heading">
+                <h1 className="page-heading">
                     My latest <strong className="purple">Music Sheets</strong>
                 </h1>
                 <Row style={{justifyContent: "center", paddingBottom: "10px"}}>
