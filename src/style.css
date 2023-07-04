@@ -804,10 +804,16 @@ button:focus {
 }
 
 /* --------- */
-/* Errors */
+/* Notifications */
 /* --------- */
 .error-page {
     padding: 20rem 0 15rem !important;
+    color: whitesmoke;
+    text-align: center;
+}
+
+.thank-you-page {
+    padding: 6rem 0 6rem !important;
     color: whitesmoke;
     text-align: center;
 }

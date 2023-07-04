@@ -3,7 +3,7 @@ import BsNavbar from "react-bootstrap/Navbar";
 import Nav from "react-bootstrap/Nav";
 import Container from "react-bootstrap/Container";
 import {Link} from "react-router-dom";
-import {CgMusicNote} from "react-icons/cg";
+import {CgMusicNote, CgPhone} from "react-icons/cg";
 import {
     AiOutlineHome,
     AiOutlineFundProjectionScreen
@@ -79,6 +79,15 @@ function Navbar() {
                                 onClick={() => updateExpanded(false)}
                             >
                                 <CgFileDocument style={{marginBottom: "2px"}}/> Lyrics
+                            </Nav.Link>
+                        </Nav.Item>
+                        <Nav.Item>
+                            <Nav.Link
+                                as={Link}
+                                to="/contact/me"
+                                onClick={() => updateExpanded(false)}
+                            >
+                                <CgPhone style={{marginBottom: "2px"}}/> Contact Me
                             </Nav.Link>
                         </Nav.Item>
                     </Nav>
