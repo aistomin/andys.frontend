@@ -84,7 +84,7 @@ function Navbar() {
                         <Nav.Item>
                             <Nav.Link
                                 as={Link}
-                                to="/contact/me"
+                                to="/contact"
                                 onClick={() => updateExpanded(false)}
                             >
                                 <CgPhone style={{marginBottom: "2px"}}/> Contact Me

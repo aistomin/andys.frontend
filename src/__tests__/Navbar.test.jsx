@@ -19,6 +19,6 @@ describe("Navbar Component", () => {
         expect(getByRole('link', {name: 'Lyrics'}))
             .toHaveAttribute('href', '/lyrics');
         expect(getByRole('link', {name: 'Contact Me'}))
-            .toHaveAttribute('href', '/contact/me');
+            .toHaveAttribute('href', '/contact');
     });
 });
