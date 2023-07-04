@@ -9,7 +9,7 @@ const UnderConstruction = () => {
                 <Row>
                     <Col md={20}>
                         <Tilt>
-                            <img src={img} className="img-fluid" alt="Under Construction"/>
+                            <img src={img} className="img-fluid" alt="Under Construction Error"/>
                         </Tilt>
                     </Col>
                 </Row>
