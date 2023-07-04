@@ -8,9 +8,9 @@ const Videos = () => {
     const videos = useStoreState((state) => state.videos);
 
     if (videos.length > 0) {
-        return <Container fluid className="videos-content">
+        return <Container fluid className="page-content">
             <Container>
-                <h1 className="videos-heading">
+                <h1 className="page-heading">
                     My latest <strong className="purple">Videos</strong>
                 </h1>
                 <Row style={{justifyContent: "center", paddingBottom: "10px"}}>

@@ -7,7 +7,7 @@ describe("Notes Component", () => {
         const {container, getByRole} = renderAppWithStore();
         const videosMenu = getByRole('link', {name: 'Notes/Tabs'});
         fireEvent.click(videosMenu);
-        const title = container.getElementsByClassName("music-sheets-heading")[0];
+        const title = container.getElementsByClassName("page-heading")[0];
         expect(title.textContent).toBe("My latest Music Sheets")
     });
 

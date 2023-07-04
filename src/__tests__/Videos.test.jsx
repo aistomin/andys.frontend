@@ -7,7 +7,7 @@ describe("Videos Component", () => {
         const {container, getByRole} = renderAppWithStore();
         const videosMenu = getByRole('link', {name: 'Videos'});
         fireEvent.click(videosMenu);
-        const title = container.getElementsByClassName("videos-heading")[0];
+        const title = container.getElementsByClassName("page-heading")[0];
         expect(title.textContent).toBe("My latest Videos")
     });
 
