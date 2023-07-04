@@ -21,6 +21,7 @@ import NotesSheet from "./components/notes/NotesSheet.jsx";
 import Notes from "./components/notes/Notes.jsx";
 import SongLyrics from "./components/lyrics/SongLyrics.jsx";
 import Lyrics from "./components/lyrics/Lyrics.jsx";
+import ContactMe from "./components/contact/ContactMe.jsx";
 
 function App() {
 
@@ -63,6 +64,7 @@ function App() {
                         <Route index element={<Lyrics/>}/>
                         <Route path=":id" element={<SongLyrics/>}/>
                     </Route>
+                    <Route path="/contact/me" element={<ContactMe/>}/>
                     <Route path="*" element={<Navigate to="/"/>}/>
                 </Routes>
                 <Footer/>
