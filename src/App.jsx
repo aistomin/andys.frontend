@@ -64,7 +64,7 @@ function App() {
                         <Route index element={<Lyrics/>}/>
                         <Route path=":id" element={<SongLyrics/>}/>
                     </Route>
-                    <Route path="/contact/me" element={<ContactMe/>}/>
+                    <Route path="/contact" element={<ContactMe/>}/>
                     <Route path="*" element={<Navigate to="/"/>}/>
                 </Routes>
                 <Footer/>
