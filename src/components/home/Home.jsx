@@ -1,5 +1,5 @@
 import {Container, Row, Col} from "react-bootstrap";
-import photo from "../../assets/andy.jpg";
+import photo from "../../assets/photo/andy.jpg";
 import Tilt from "react-parallax-tilt";
 import {
     AiOutlineTwitter,
