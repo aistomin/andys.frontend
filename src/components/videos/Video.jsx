@@ -35,7 +35,7 @@ const Video = () => {
             </Link>;
         }
         return (
-            <Container fluid className="video-content">
+            <Container fluid className="page-content">
                 <Container>
                     <Row>
                         <Col md={6} className="embedded-video embed-responsive embed-responsive-16by9">
