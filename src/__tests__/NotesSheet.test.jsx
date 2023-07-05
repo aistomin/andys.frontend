@@ -20,7 +20,7 @@ describe("NotesSheet Component", () => {
         const card = container.getElementsByClassName("item-card")[1];
         const details = card.getElementsByClassName('card-link')[0]
         fireEvent.click(details);
-        const content = container.getElementsByClassName("music-sheet")[0];
+        const content = container.getElementsByClassName("page-content")[0];
         const embeddedPdf = content
             .getElementsByClassName("embed-responsive-item")[0];
         expect(embeddedPdf.src)

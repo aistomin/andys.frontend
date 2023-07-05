@@ -20,7 +20,7 @@ describe("Video Component", () => {
         const card = container.getElementsByClassName("item-card")[3];
         const details = card.getElementsByClassName('card-link')[0]
         fireEvent.click(details);
-        const content = container.getElementsByClassName("video-content")[0];
+        const content = container.getElementsByClassName("page-content")[0];
         const embeddedVideo = content
             .getElementsByClassName("embed-responsive-item")[0];
         expect(embeddedVideo.src)
@@ -48,7 +48,7 @@ describe("Video Component", () => {
         const card = container.getElementsByClassName("item-card")[0];
         const details = card.getElementsByClassName('card-link')[0]
         fireEvent.click(details);
-        const content = container.getElementsByClassName("video-content")[0];
+        const content = container.getElementsByClassName("page-content")[0];
         const buttons = content.getElementsByClassName("video-button")
         expect(buttons.length).toBe(2);
         expect(buttons[0].textContent).toContain("Go to YouTube");
@@ -62,7 +62,7 @@ describe("Video Component", () => {
         const card = container.getElementsByClassName("item-card")[2];
         const details = card.getElementsByClassName('card-link')[0]
         fireEvent.click(details);
-        const content = container.getElementsByClassName("video-content")[0];
+        const content = container.getElementsByClassName("page-content")[0];
         const buttons = content.getElementsByClassName("video-button")
         expect(buttons.length).toBe(2);
         expect(buttons[0].textContent).toContain("Go to YouTube");
@@ -76,7 +76,7 @@ describe("Video Component", () => {
         const card = container.getElementsByClassName("item-card")[1];
         const details = card.getElementsByClassName('card-link')[0]
         fireEvent.click(details);
-        const content = container.getElementsByClassName("video-content")[0];
+        const content = container.getElementsByClassName("page-content")[0];
         const buttons = content.getElementsByClassName("video-button")
         expect(buttons.length).toBe(1);
     });

@@ -15,7 +15,7 @@ const NotesSheet = () => {
 
     if (sheet) {
         return (
-            <Container fluid className="music-sheet">
+            <Container fluid className="page-content">
                 <Row style={{justifyContent: "center", position: "relative"}}>
                     <a href={sheet.pdfUrl} target="_blank" rel="noopener noreferrer" download>
                         <Button variant="primary" className="notes-sheet-button">

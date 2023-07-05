@@ -750,14 +750,6 @@ button:focus {
 /* Videos */
 /* --------- */
 
-.video-content {
-    padding: 9rem 0 2rem !important;
-    color: whitesmoke;
-    text-align: left;
-    justify-content: center;
-    position: relative;
-}
-
 .video-card {
     padding: 50px 25px !important;
     height: auto !important;
@@ -775,32 +767,6 @@ button:focus {
     padding-top: 50px;
     font-size: 1.2em !important;
     text-align: left;
-}
-
-/* --------- */
-/* Music Sheets */
-/* --------- */
-
-.music-sheet {
-    position: relative !important;
-    padding: 9rem 0 2rem !important;
-    background-image: var(--section-background-color) !important;
-    color: white !important;
-}
-
-.music-sheet-card {
-    padding: 50px 25px !important;
-    height: auto !important;
-}
-
-/* --------- */
-/* Lyrics */
-/* --------- */
-.song-lyrics {
-    position: relative !important;
-    padding: 9rem 0 2rem !important;
-    background-image: var(--section-background-color) !important;
-    color: white !important;
 }
 
 /* --------- */
@@ -826,6 +792,8 @@ button:focus {
     position: relative !important;
     padding: 9rem 0 2rem !important;
     background-image: var(--section-background-color) !important;
+    color: white !important;
+    justify-content: center;
 }
 
 .page-heading {
