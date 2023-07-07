@@ -1,3 +1,14 @@
-# https://www.robotstxt.org/robotstxt.html
 User-agent: *
-Disallow:
+Disallow: /contact
+Disallow: /videos
+Disallow: /notes
+Disallow: /lyrics
+Sitemap: https://andy-grails.de/sitemap.xml
+
+# Google adsbot ignores robots.txt unless specifically named!
+User-agent: adsbot-google
+Disallow: /contact
+Disallow: /videos
+Disallow: /notes
+Disallow: /lyrics
+Sitemap: https://andy-grails.de/sitemap.xml
