@@ -4,6 +4,7 @@ import Button from "react-bootstrap/Button";
 import img from "../../assets/thank_you.png";
 import Tilt from "react-parallax-tilt";
 import {AiOutlineArrowRight} from "react-icons/ai";
+import ReCAPTCHA from "react-google-recaptcha";
 
 const ContactMe = () => {
     const [state, handleSubmit] = useForm("mzblpnjw");
@@ -50,6 +51,12 @@ const ContactMe = () => {
                                 prefix="Message"
                                 field="message"
                                 errors={state.errors}
+                            />
+                        </Form.Group>
+                        <Form.Group className="mb-3" style={{placeContent: 'center', display: 'flex'}}>
+                            <ReCAPTCHA
+                                sitekey="6LdCcwcnAAAAAAe497s-Qh91cyFwT9T6pqzrdesh"
+                                theme='dark'
                             />
                         </Form.Group>
                         <Form.Group className="mb-3">
