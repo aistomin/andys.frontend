@@ -44,7 +44,7 @@ const ContactMe = () => {
                                 id="message"
                                 name="message"
                                 placeholder="Your Message"
-                                as="textarea" rows={14}
+                                as="textarea" rows={11}
                                 size="lg"
                             />
                             <ValidationError
