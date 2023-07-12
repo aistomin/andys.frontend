@@ -763,7 +763,7 @@ button:focus {
 /* Notifications */
 /* --------- */
 .error-page {
-    padding: 20rem 0 15rem !important;
+    padding: 15rem 0 15rem !important;
     color: whitesmoke;
     text-align: center;
 }

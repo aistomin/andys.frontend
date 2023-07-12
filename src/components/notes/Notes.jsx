@@ -1,7 +1,8 @@
-import UnderConstruction from "../errors/UnderConstruction.jsx";
 import {Col, Container, Row} from "react-bootstrap";
 import {useStoreState} from "easy-peasy";
 import NotesCard from "./NotesCard.jsx";
+import ErrorWithPicture from "../errors/ErrorWithPicture.jsx";
+import comingSoon from "../../assets/coming_soon.svg";
 
 const Notes = () => {
 
@@ -27,7 +28,7 @@ const Notes = () => {
             </Container>
         </Container>
     } else {
-        return <UnderConstruction/>
+        return <ErrorWithPicture img={comingSoon} alt="Coming Soon!!!"/>
     }
 };
 
