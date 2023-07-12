@@ -4,7 +4,8 @@ import Container from "react-bootstrap/Container";
 import {Row} from "react-bootstrap";
 import Button from "react-bootstrap/Button";
 import {AiOutlineDownload} from "react-icons/ai";
-import NotFound from "../errors/NotFound.jsx";
+import ErrorWithPicture from "../errors/ErrorWithPicture.jsx";
+import notFound from "../../assets/404.png"
 
 const SongLyrics = () => {
 
@@ -31,7 +32,7 @@ const SongLyrics = () => {
             </Container>
         );
     } else {
-        return <NotFound/>
+        return <ErrorWithPicture img={notFound} alt="Not Found"/>
     }
 };
 

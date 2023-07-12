@@ -19,7 +19,7 @@ const ErrorWithPicture = ({img, alt}) => {
 };
 
 ErrorWithPicture.propTypes = {
-    img: PropTypes.object,
+    img: PropTypes.string,
     alt: PropTypes.string
 }
 

@@ -4,7 +4,8 @@ import Button from "react-bootstrap/Button";
 import parse from 'html-react-parser';
 import {CgFileDocument, CgMusicNote, CgYoutube} from "react-icons/cg";
 import {useStoreState} from "easy-peasy";
-import NotFound from "../errors/NotFound.jsx";
+import ErrorWithPicture from "../errors/ErrorWithPicture.jsx";
+import notFound from "../../assets/404.png";
 
 const Video = () => {
 
@@ -74,7 +75,7 @@ const Video = () => {
             </Container>
         );
     } else {
-        return <NotFound/>
+        return <ErrorWithPicture img={notFound} alt="Not Found"/>
     }
 };
 
