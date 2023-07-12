@@ -1,7 +1,8 @@
-import UnderConstruction from "../errors/UnderConstruction.jsx";
 import {Col, Container, Row} from "react-bootstrap";
 import {useStoreState} from "easy-peasy";
 import VideoCard from "./VideoCard.jsx";
+import ErrorWithPicture from "../errors/ErrorWithPicture.jsx";
+import comingSoon from "../../assets/coming_soon.svg"
 
 const Videos = () => {
 
@@ -27,7 +28,7 @@ const Videos = () => {
             </Container>
         </Container>
     } else {
-        return <UnderConstruction/>
+        return <ErrorWithPicture img={comingSoon} alt="Coming Soon!!!"/>
     }
 };
 
