@@ -22,6 +22,7 @@ import Notes from "./components/notes/Notes.jsx";
 import SongLyrics from "./components/lyrics/SongLyrics.jsx";
 import Lyrics from "./components/lyrics/Lyrics.jsx";
 import ContactMe from "./components/contact/ContactMe.jsx";
+import {ErrorBoundary, Provider} from "@rollbar/react";
 
 function App() {
 
@@ -44,32 +45,41 @@ function App() {
         console.log("Data are loaded.")
     }, []);
 
+    const rollbar = {
+        accessToken: '486104524f0e4a288562b1d83181002b',
+        environment: 'production',
+    };
+
     return (
-        <Router>
-            <Preloader load={load}/>
-            <div className="App" id={load ? "no-scroll" : "scroll"}>
-                <Navbar/>
-                <ScrollToTop/>
-                <Routes>
-                    <Route path="/" element={<Home/>}/>
-                    <Route path="/videos">
-                        <Route index element={<Videos/>}/>
-                        <Route path=":id" element={<Video/>}/>
-                    </Route>
-                    <Route path="/notes">
-                        <Route index element={<Notes/>}/>
-                        <Route path=":id" element={<NotesSheet/>}/>
-                    </Route>
-                    <Route path="/lyrics">
-                        <Route index element={<Lyrics/>}/>
-                        <Route path=":id" element={<SongLyrics/>}/>
-                    </Route>
-                    <Route path="/contact" element={<ContactMe/>}/>
-                    <Route path="*" element={<Navigate to="/"/>}/>
-                </Routes>
-                <Footer/>
-            </div>
-        </Router>
+        <Provider config={rollbar}>
+            <ErrorBoundary>
+                <Router>
+                    <Preloader load={load}/>
+                    <div className="App" id={load ? "no-scroll" : "scroll"}>
+                        <Navbar/>
+                        <ScrollToTop/>
+                        <Routes>
+                            <Route path="/" element={<Home/>}/>
+                            <Route path="/videos">
+                                <Route index element={<Videos/>}/>
+                                <Route path=":id" element={<Video/>}/>
+                            </Route>
+                            <Route path="/notes">
+                                <Route index element={<Notes/>}/>
+                                <Route path=":id" element={<NotesSheet/>}/>
+                            </Route>
+                            <Route path="/lyrics">
+                                <Route index element={<Lyrics/>}/>
+                                <Route path=":id" element={<SongLyrics/>}/>
+                            </Route>
+                            <Route path="/contact" element={<ContactMe/>}/>
+                            <Route path="*" element={<Navigate to="/"/>}/>
+                        </Routes>
+                        <Footer/>
+                    </div>
+                </Router>
+            </ErrorBoundary>
+        </Provider>
     );
 }
 
