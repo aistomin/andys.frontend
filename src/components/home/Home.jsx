@@ -1,5 +1,7 @@
 import {Container, Row, Col} from "react-bootstrap";
-import photo from "../../assets/photo/andy.jpg";
+import photo800 from "../../assets/andy-avatar-800.jpg";
+import photo600 from "../../assets/andy-avatar-600.jpg";
+import photo480 from "../../assets/andy-avatar-480.jpg";
 import Tilt from "react-parallax-tilt";
 import {
     AiOutlineTwitter,
@@ -43,7 +45,12 @@ function Home() {
                     </Col>
                     <Col md={4} className="home-photo">
                         <Tilt>
-                            <img src={photo} className="img-fluid" alt="avatar"/>
+                            <picture>
+                                <source media="(min-width: 800px)" srcSet={photo800}/>
+                                <source media="(min-width: 600px)" srcSet={photo600}/>
+                                <source media="(min-width: 480px)" srcSet={photo480}/>
+                                <img src={photo600} className="img-fluid" alt="Photo of me :)"/>
+                            </picture>
                         </Tilt>
                     </Col>
                 </Row>
