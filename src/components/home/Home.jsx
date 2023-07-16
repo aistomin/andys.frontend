@@ -1,7 +1,7 @@
 import {Container, Row, Col} from "react-bootstrap";
 import photo800 from "../../assets/andy-avatar-800.jpg";
-import photo600 from "../../assets/404.png";
-import photo480 from "../../assets/thank_you.png";
+import photo600 from "../../assets/andy-avatar-600.jpg";
+import photo480 from "../../assets/andy-avatar-480.jpg";
 import Tilt from "react-parallax-tilt";
 import {
     AiOutlineTwitter,
