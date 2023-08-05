@@ -42,9 +42,11 @@ to review your changes in the next couple of days and merge them to the master
 branch, if they look correct. To avoid frustration, please test your changes 
 _before_ sending me the pull request. Here are some useful commands:
 
-1. To install all the necessary dependencies, execute: `npm install`
+1. To install all the required dependencies, execute: `npm install`
 2. To run the app, execute: `npm run dev`
 3. To run the tests, execute: `npm test`
+
+Thank you in advance!!!
 
 ## Licence
 The project is licensed under the terms of the
