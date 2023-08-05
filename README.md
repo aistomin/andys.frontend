@@ -8,7 +8,7 @@ the Andy's [website](https://andy-grails.de/). The website contains videos,
 lyrics and music sheets, that are created, re-worked or covered by this amateur artist, who
 simply calls himself "Andy" :smiley: 
 
-## Why it was created?
+## Why It Was Created?
 The primary goal was to play around with React JS. As a backend developer I have 
 not that much experience with the frontend technologies. So, I decided to educate
 myself a little bit and learn React JS. That's where the idea of this website came
