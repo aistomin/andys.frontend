@@ -72,15 +72,15 @@ function Navbar() {
                                 <CgMusicNote style={{marginBottom: "2px"}}/> Notes/Tabs
                             </Nav.Link>
                         </Nav.Item>
-                        <Nav.Item>
-                            <Nav.Link
-                                as={Link}
-                                to="/lyrics"
-                                onClick={() => updateExpanded(false)}
-                            >
-                                <CgFileDocument style={{marginBottom: "2px"}}/> Lyrics
-                            </Nav.Link>
-                        </Nav.Item>
+                        {/*<Nav.Item>*/}
+                        {/*    <Nav.Link*/}
+                        {/*        as={Link}*/}
+                        {/*        to="/lyrics"*/}
+                        {/*        onClick={() => updateExpanded(false)}*/}
+                        {/*    >*/}
+                        {/*        <CgFileDocument style={{marginBottom: "2px"}}/> Lyrics*/}
+                        {/*    </Nav.Link>*/}
+                        {/*</Nav.Item>*/}
                         <Nav.Item>
                             <Nav.Link
                                 as={Link}
