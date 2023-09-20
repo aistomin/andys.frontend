@@ -25,7 +25,7 @@
     "react-dom": "^18.2.0",
     "react-google-recaptcha": "^3.1.0",
     "react-icons": "^4.11.0",
-    "react-parallax-tilt": "^1.7.166",
+    "react-parallax-tilt": "^1.7.167",
     "react-router-dom": "^6.16.0",
     "rollbar": "^2.26.2"
   },
