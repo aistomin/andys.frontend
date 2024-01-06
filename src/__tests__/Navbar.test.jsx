@@ -5,7 +5,7 @@ describe("Navbar Component", () => {
     it("should have correct logo", () => {
         const {container} = renderAppWithStore();
         const logo = container.getElementsByClassName("main-name")[0]
-        expect(logo.textContent).toBe("Andy G.");
+        expect(logo.textContent).toBe("- Andy -");
     });
 
     it("should have correct navigation links", () => {
