@@ -28,12 +28,12 @@ function Home() {
                             <i><b className="purple">Andy</b></i> here. This is my personal website where I
                             share my&nbsp;
                             <i><b className="purple">passion</b></i> for Music 🎸
-                            It is an extension of my day to day activity, a little part
+                            It is an extension of my day to day activities, a little part
                             of me that I would like to share with you.
                             <br/>
                             <br/>
                             I&apos;m particularly interested in <i><b className="purple">Blues</b></i> music
-                            and its descendants like <i><b className="purple">Jazz, Rock</b></i> etc.
+                            and its descendants like <i><b className="purple">Hard Rock, Metal</b></i> etc.
                             <br/>
                             <br/>
                             I&apos;m going to share with you my own pieces as well as my covers of well-known
