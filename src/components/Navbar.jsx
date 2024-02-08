@@ -32,7 +32,7 @@ function Navbar() {
         >
             <Container>
                 <BsNavbar.Brand href="/" className="d-flex" data-testid="logo">
-                    <strong className="main-name">Andy Grails</strong>
+                    <u className="main-name">Andy Grails</u>
                 </BsNavbar.Brand>
                 <BsNavbar.Toggle
                     aria-controls="responsive-BsNavbar-nav"
