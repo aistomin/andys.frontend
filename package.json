@@ -27,7 +27,7 @@
     "react-icons": "^5.0.1",
     "react-parallax-tilt": "^1.7.212",
     "react-router-dom": "^6.22.1",
-    "rollbar": "^2.26.2"
+    "rollbar": "^2.26.3"
   },
   "devDependencies": {
     "@babel/preset-env": "^7.23.9",
