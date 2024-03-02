@@ -45,10 +45,22 @@ function App() {
         console.log("Data are loaded.")
     }, []);
 
-    const rollbar = {
+    const isProduction = () => {
+        const env = process.env.VITE_APP_ENV
+        console.log("Environment: ", env)
+        const prod = env === 'production';
+        if (prod) {
+            console.log("We are working in the production environment.")
+        } else {
+            console.log("We are working in the non-production environment.")
+        }
+        return prod;
+    }
+
+    const rollbar = isProduction() ? {
         accessToken: '486104524f0e4a288562b1d83181002b',
         environment: 'production',
-    };
+    } : {};
 
     return (
         <Provider config={rollbar}>
