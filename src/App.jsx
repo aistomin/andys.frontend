@@ -6,7 +6,7 @@ import {
     BrowserRouter as Router,
     Route,
     Routes,
-    Navigate, useLocation
+    Navigate
 } from "react-router-dom";
 import ScrollToTop from "./components/ScrollToTop.jsx";
 import "./style.css";
@@ -23,7 +23,7 @@ import SongLyrics from "./components/lyrics/SongLyrics.jsx";
 import Lyrics from "./components/lyrics/Lyrics.jsx";
 import ContactMe from "./components/contact/ContactMe.jsx";
 import {ErrorBoundary, Provider} from "@rollbar/react";
-import * as ReactGA from "react-ga";
+import ReactGA from "react-ga4";
 
 function App() {
 
@@ -49,13 +49,7 @@ function App() {
     const isProduction = () => {
         const env = process.env.VITE_APP_ENV
         console.log("Environment: ", env)
-        const prod = env === 'production';
-        if (prod) {
-            console.log("We are working in the production environment.")
-        } else {
-            console.log("We are working in the non-production environment.")
-        }
-        return prod;
+        return  env === 'production';
     }
 
     const rollbar = isProduction() ? {
@@ -64,11 +58,9 @@ function App() {
     } : {};
 
     if (isProduction()) {
-        ReactGA.initialize('G-4SXDKGJQS6');
-        const location = useLocation();
-        useEffect(() => {
-            ReactGA.pageview(location.pathname + location.search);
-        }, [location]);
+        console.log("Initialise GA .....")
+        ReactGA.initialize("G-4SXDKGJQS6");
+        console.log("GA is initialised.")
     }
 
     return (
