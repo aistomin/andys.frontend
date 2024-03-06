@@ -6,7 +6,7 @@ import {
     BrowserRouter as Router,
     Route,
     Routes,
-    Navigate
+    Navigate, useLocation
 } from "react-router-dom";
 import ScrollToTop from "./components/ScrollToTop.jsx";
 import "./style.css";
@@ -65,6 +65,10 @@ function App() {
 
     if (isProduction()) {
         ReactGA.initialize('G-4SXDKGJQS6');
+        const location = useLocation();
+        useEffect(() => {
+            ReactGA.pageview(location.pathname + location.search);
+        }, [location]);
     }
 
     return (
