@@ -23,6 +23,7 @@ import SongLyrics from "./components/lyrics/SongLyrics.jsx";
 import Lyrics from "./components/lyrics/Lyrics.jsx";
 import ContactMe from "./components/contact/ContactMe.jsx";
 import {ErrorBoundary, Provider} from "@rollbar/react";
+import * as ReactGA from "react-ga";
 
 function App() {
 
@@ -61,6 +62,10 @@ function App() {
         accessToken: '486104524f0e4a288562b1d83181002b',
         environment: 'production',
     } : {};
+
+    if (isProduction()) {
+        ReactGA.initialize('G-4SXDKGJQS6');
+    }
 
     return (
         <Provider config={rollbar}>
