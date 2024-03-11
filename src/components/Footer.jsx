@@ -3,6 +3,7 @@ import {
     AiOutlineTwitter,
     AiFillInstagram, AiFillYoutube, AiFillFacebook,
 } from "react-icons/ai";
+import {Link} from "react-router-dom";
 
 function Footer() {
     let date = new Date();
@@ -11,14 +12,11 @@ function Footer() {
         <Container fluid className="footer">
             <Row>
                 <Col md="4" className="footer-credits">
-                    Developers: <a
-                    href="https://github.com/aistomin">Andrej</a>, <a
-                    href="https://github.com/soumyajit4419">Soumyajit</a>. Designers: <a
-                    href="https://pixabay.com/users/josethestoryteller-5100055/">Josethestoryteller</a>, <a
-                    href="https://pixabay.com/users/mocho-156870/">Mocho</a>
+                    Developed by <a href="https://github.com/aistomin">me</a> with
+                        <br/> a <Link to={"/credits"}>little help from my friends</Link>
                 </Col>
                 <Col md="4" className="footer-copyright">
-                    <h3>Copyright © {year} Andy Grails</h3>
+                    Copyright © {year} Andy Grails
                 </Col>
                 <Col md="4" className="footer-body">
                     <ul className="footer-icons">

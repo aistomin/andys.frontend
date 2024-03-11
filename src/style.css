@@ -396,10 +396,18 @@ button:focus {
 
 .footer-credits {
     text-align: center !important;
+    font-size: 0.6em;
+    color: white !important;
+    margin-top: 0.5em !important;
+    margin-bottom: 0.5em !important;
 }
 
 .footer-copyright {
     text-align: center !important;
+    font-size: 1em;
+    color: white !important;
+    margin-top: 0.5em !important;
+    margin-bottom: 0.5em !important;
 }
 
 .footer-body {
@@ -415,13 +423,6 @@ button:focus {
     .footer-body {
         text-align: center !important;
     }
-}
-
-.footer h3 {
-    font-size: 1em;
-    color: white !important;
-    margin-top: 0.5em !important;
-    margin-bottom: 0.5em !important;
 }
 
 .footer-icons {
