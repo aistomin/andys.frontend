@@ -24,6 +24,7 @@ import Lyrics from "./components/lyrics/Lyrics.jsx";
 import ContactMe from "./components/contact/ContactMe.jsx";
 import {ErrorBoundary, Provider} from "@rollbar/react";
 import ReactGA from "react-ga4";
+import Credits from "./components/credits/Credits.jsx";
 
 function App() {
 
@@ -86,6 +87,7 @@ function App() {
                                 <Route path=":id" element={<SongLyrics/>}/>
                             </Route>
                             <Route path="/contact" element={<ContactMe/>}/>
+                            <Route path="/credits" element={<Credits/>}/>
                             <Route path="*" element={<Navigate to="/"/>}/>
                         </Routes>
                         <Footer/>

@@ -13,7 +13,7 @@ function Home() {
         <Container fluid className="home-content" id="about">
             <Container>
                 <Row>
-                    <Col md={8} className="home-introduction">
+                    <Col md={8}>
                         <blockquote className="blockquote mb-0">
                             <p style={{color: "rgb(155 126 172)"}}>
                                 &quot;Every bad situation is a blues song waiting to happen.&quot;
