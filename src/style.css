@@ -793,6 +793,12 @@ button:focus {
     font-weight: 500 !important;
 }
 
+.page-body {
+    padding-top: 20px;
+    font-size: 1.2em !important;
+    text-align: left;
+}
+
 .item-card {
     padding: 50px 25px !important;
     height: auto !important;
