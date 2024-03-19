@@ -19,7 +19,7 @@
     "babel-plugin-transform-import-meta": "^2.2.1",
     "bootstrap": "^5.3.3",
     "easy-peasy": "^6.0.4",
-    "html-react-parser": "^5.1.8",
+    "html-react-parser": "^5.1.9",
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-bootstrap": "^2.10.1",
