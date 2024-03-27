@@ -1,9 +1,8 @@
 import {Col, Container, Row} from "react-bootstrap";
 import Tilt from "react-parallax-tilt";
-import photo800 from "../../assets/andy-avatar-800.jpg";
-import photo600 from "../../assets/andy-avatar-600.jpg";
-import photo480 from "../../assets/andy-avatar-480.jpg";
-import {AiFillFacebook, AiFillInstagram, AiFillYoutube, AiOutlineTwitter} from "react-icons/ai";
+import photo800 from "../../assets/photo/andy-acc-guitar-800.jpg";
+import photo600 from "../../assets/photo/andy-acc-guitar-600.jpg";
+import photo480 from "../../assets/photo/andy-acc-guitar-480.jpg";
 import {Link} from "react-router-dom";
 
 const Credits = () => {
