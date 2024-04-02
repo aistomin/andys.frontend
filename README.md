@@ -30,8 +30,8 @@ I'd like to mention some people explicitly:
 Thank you all for your work, it's very helpful!!!
 
 ## Have You Found a Bug? Do You Have Any Suggestions?
-I'm always happy to hear some suggestions, ideas and thoughts from you. 
-Don't hesitate to [create an issue](https://github.com/aistomin/andys.frontend/issues/new/).
+I am always happy to hear some suggestions, ideas and thoughts from you. 
+Do not hesitate to [create an issue](https://github.com/aistomin/andys.frontend/issues/new/).
 It will help me to make the project better. Thank you in advance!!!
 
 
@@ -40,7 +40,7 @@ Do you want to help me with the project? I will be more than just happy.
 Please: fork the repository, make changes, submit a pull request. I promise
 to review your changes in the next couple of days and merge them to the master
 branch, if they look correct. To avoid frustration, please test your changes 
-_before_ sending me the pull request. Here are some useful commands:
+_before_ sending me a pull request. Here are some useful commands:
 
 1. To install all the required dependencies, execute: `npm install`
 2. To run the app, execute: `npm run dev`
