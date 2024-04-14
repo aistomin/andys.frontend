@@ -7,7 +7,7 @@ import {Link} from "react-router-dom";
 
 const Credits = () => {
     return (
-        <Container fluid className="home-content" id="about">
+        <Container fluid className="home-content" id="credits">
             <Container>
                 <Row>
                     <Col md={8}>
@@ -21,47 +21,47 @@ const Credits = () => {
                         </p>
                         <p className="page-body">
                             I would like to mention some people explicitly:
-                            <ul>
-                                <li>
-                                    <a href="https://github.com/gitdagray">Dave Gray</a> - programmer, youtuber,
-                                    teacher, musician and a
-                                    crazy guy who shares a terrific courses on <a
-                                    href="https://www.youtube.com/@DaveGrayTeachesCode">YouTube</a> With
-                                    a help of this courses I slightly improved my knowledge of HTML, CSS and JavaScript
-                                    + I learned how to start with React JS.
-                                </li>
-                                <li>
-                                    <a href="https://github.com/soumyajit4419">Soumyajit Behera</a> - GitHub enthusiast
-                                    from whom
-                                    I have stolen the base of my website. Without his work I would probably have not
-                                    started
-                                    the project until this very day.
-                                </li>
-                            </ul>
                         </p>
+                        <ul>
+                            <li>
+                                <a href="https://github.com/gitdagray">Dave Gray</a> - programmer, youtuber,
+                                teacher, musician and a
+                                crazy guy who shares a terrific courses on <a
+                                href="https://www.youtube.com/@DaveGrayTeachesCode">YouTube</a> With
+                                a help of this courses I slightly improved my knowledge of HTML, CSS and JavaScript
+                                + I learned how to start with React JS.
+                            </li>
+                            <li>
+                                <a href="https://github.com/soumyajit4419">Soumyajit Behera</a> - GitHub enthusiast
+                                from whom
+                                I have stolen the base of my website. Without his work I would probably have not
+                                started
+                                the project until this very day.
+                            </li>
+                        </ul>
                         <p className="page-body">
                             I am not a designer myself, so I would have a hard times if there was not a free content on
                             the Internet like icons, images etc.
                             Below I just list a resources and pieces of work that I used, in no particular order:
-                            <ul>
-                                <li>
-                                    <a href="https://pixabay.com/illustrations/under-construction-construction-sign-2408062/">"Under
-                                        Construction" image</a>
-                                </li>
-                                <li>
-                                    <a href="https://pixabay.com/vectors/error-page-was-not-found-news-http-1349562/">"Page
-                                        Not Found" image</a>
-                                </li>
-                                <li>
-                                    <a href="https://pixabay.com/illustrations/thanks-thankyou-gratitude-grateful-5709753/">"Thank
-                                        You" image</a>
-                                </li>
-                                <li>
-                                    <a href="https://freesvg.org/red-coming-soon-stamp-vector-graphics">"Coming Soon"
-                                        image</a>
-                                </li>
-                            </ul>
                         </p>
+                        <ul>
+                            <li>
+                                <a href="https://pixabay.com/illustrations/under-construction-construction-sign-2408062/">"Under
+                                    Construction" image</a>
+                            </li>
+                            <li>
+                                <a href="https://pixabay.com/vectors/error-page-was-not-found-news-http-1349562/">"Page
+                                    Not Found" image</a>
+                            </li>
+                            <li>
+                                <a href="https://pixabay.com/illustrations/thanks-thankyou-gratitude-grateful-5709753/">"Thank
+                                    You" image</a>
+                            </li>
+                            <li>
+                                <a href="https://freesvg.org/red-coming-soon-stamp-vector-graphics">"Coming Soon"
+                                    image</a>
+                            </li>
+                        </ul>
                         <p className="page-body">
                             I may forget to mention someone because there are a lot of resources that helped me. If
                             that is the case, please <Link to="/contact">let me know</Link>
@@ -70,7 +70,7 @@ const Credits = () => {
                             Thank you all for your work, it is very valuable and helpful!!!
                         </p>
                     </Col>
-                    <Col md={4} className="home-photo">
+                    <Col md={4} className="home-photo" id='creditsPhoto'>
                         <Tilt>
                             <picture>
                                 <source media="(min-width: 800px)" srcSet={photo800}/>
