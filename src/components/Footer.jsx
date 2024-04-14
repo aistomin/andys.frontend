@@ -13,7 +13,7 @@ function Footer() {
             <Row>
                 <Col md="4" className="footer-credits">
                     Developed by <a href="https://github.com/aistomin">me</a> with
-                        <br/> a <Link to={"/credits"}>little help from my friends</Link>
+                        <br/> a <Link to={"/credits"} id="creditsLink">little help from my friends</Link>
                 </Col>
                 <Col md="4" className="footer-copyright">
                     Copyright © {year} Andy Grails
