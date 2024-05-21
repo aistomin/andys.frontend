@@ -12,7 +12,7 @@ function ItemCard({icon, title, description, previewUrl, detailsUrl}) {
             <Card.Body>
                 <Card.Title className="card-title">{title}</Card.Title>
                 <br/>
-                <Card.Text className="card-text" style={{textAlign: "justify"}}>
+                <Card.Text className="card-text">
                     {description}
                 </Card.Text>
                 <br/>
