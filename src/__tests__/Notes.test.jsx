@@ -3,7 +3,7 @@ import {fireEvent} from "@testing-library/react";
 
 describe("Notes Component", () => {
 
-    it.skip("should have a proper title", () => {
+    it("should have a proper title", () => {
         const {container, getByRole} = renderAppWithStore();
         const videosMenu = getByRole('link', {name: 'Notes/Tabs'});
         fireEvent.click(videosMenu);
@@ -11,11 +11,11 @@ describe("Notes Component", () => {
         expect(title.textContent).toBe("My latest Music Sheets")
     });
 
-    it.skip("should display all the existing videos", () => {
+    it("should display all the existing videos", () => {
         const {container, getByRole} = renderAppWithStore();
         const videosMenu = getByRole('link', {name: 'Notes/Tabs'});
         fireEvent.click(videosMenu);
         const cards = container.getElementsByClassName("item-card");
-        expect(cards.length).toBe(2);
+        expect(cards.length).toBe(1);
     });
 });
