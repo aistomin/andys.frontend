@@ -4,7 +4,6 @@ import photo600 from "../../assets/andy-avatar-600.jpg";
 import photo480 from "../../assets/andy-avatar-480.jpg";
 import Tilt from "react-parallax-tilt";
 import {
-    AiOutlineTwitter,
     AiFillInstagram, AiFillYoutube, AiFillFacebook,
 } from "react-icons/ai";
 
@@ -89,16 +88,6 @@ function Home() {
                                     className="icon-colour home-social-icons"
                                 >
                                     <AiFillFacebook/>
-                                </a>
-                            </li>
-                            <li className="social-icons">
-                                <a
-                                    href="https://twitter.com/AndyGrails"
-                                    target="_blank"
-                                    rel="noreferrer"
-                                    className="icon-colour home-social-icons"
-                                >
-                                    <AiOutlineTwitter/>
                                 </a>
                             </li>
                         </ul>

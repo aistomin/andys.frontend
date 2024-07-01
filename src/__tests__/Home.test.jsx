@@ -38,6 +38,6 @@ describe("Home Component", () => {
         expect(social.textContent).toContain("FIND ME ON");
         expect(
             container.getElementsByClassName("home-social-icons").length
-        ).toBe(4);
+        ).toBe(3);
     });
 });

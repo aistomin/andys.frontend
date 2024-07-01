@@ -1,6 +1,5 @@
 import {Container, Row, Col} from "react-bootstrap";
 import {
-    AiOutlineTwitter,
     AiFillInstagram, AiFillYoutube, AiFillFacebook,
 } from "react-icons/ai";
 import {Link} from "react-router-dom";
@@ -48,16 +47,6 @@ function Footer() {
                                 rel="noopener noreferrer"
                             >
                                 <AiFillFacebook/>
-                            </a>
-                        </li>
-                        <li className="social-icons-footer">
-                            <a
-                                href="https://twitter.com/AndyGrails"
-                                style={{color: "white"}}
-                                target="_blank"
-                                rel="noopener noreferrer"
-                            >
-                                <AiOutlineTwitter/>
                             </a>
                         </li>
                     </ul>
