@@ -36,11 +36,6 @@ describe("Footer Component", () => {
                 'href',
                 'https://www.facebook.com/profile.php?id=100074082643728'
             );
-        expect(icons[3].firstChild)
-            .toHaveAttribute(
-                'href',
-                'https://twitter.com/AndyGrails'
-            );
-        expect(icons.length).toBe(4);
+        expect(icons.length).toBe(3);
     });
 });
