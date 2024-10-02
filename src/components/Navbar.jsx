@@ -62,24 +62,24 @@ function Navbar() {
                                 />{" "} Videos
                             </Nav.Link>
                         </Nav.Item>
-                        <Nav.Item>
-                            <Nav.Link
-                                as={Link}
-                                to="/notes"
-                                onClick={() => updateExpanded(false)}
-                            >
-                                <CgMusicNote style={{marginBottom: "2px"}}/> Notes/Tabs
-                            </Nav.Link>
-                        </Nav.Item>
-                        <Nav.Item>
-                            <Nav.Link
-                                as={Link}
-                                to="/lyrics"
-                                onClick={() => updateExpanded(false)}
-                            >
-                                <CgFileDocument style={{marginBottom: "2px"}}/> Lyrics
-                            </Nav.Link>
-                        </Nav.Item>
+                        {/*<Nav.Item>*/}
+                        {/*    <Nav.Link*/}
+                        {/*        as={Link}*/}
+                        {/*        to="/notes"*/}
+                        {/*        onClick={() => updateExpanded(false)}*/}
+                        {/*    >*/}
+                        {/*        <CgMusicNote style={{marginBottom: "2px"}}/> Notes/Tabs*/}
+                        {/*    </Nav.Link>*/}
+                        {/*</Nav.Item>*/}
+                        {/*<Nav.Item>*/}
+                        {/*    <Nav.Link*/}
+                        {/*        as={Link}*/}
+                        {/*        to="/lyrics"*/}
+                        {/*        onClick={() => updateExpanded(false)}*/}
+                        {/*    >*/}
+                        {/*        <CgFileDocument style={{marginBottom: "2px"}}/> Lyrics*/}
+                        {/*    </Nav.Link>*/}
+                        {/*</Nav.Item>*/}
                         <Nav.Item>
                             <Nav.Link
                                 as={Link}
