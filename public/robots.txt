@@ -3,6 +3,7 @@ Disallow: /contact
 Disallow: /videos
 Disallow: /notes
 Disallow: /lyrics
+Disallow: /credits
 Sitemap: https://andy-grails.de/sitemap.xml
 
 # Google adsbot ignores robots.txt unless specifically named!
@@ -11,4 +12,5 @@ Disallow: /contact
 Disallow: /videos
 Disallow: /notes
 Disallow: /lyrics
+Disallow: /credits
 Sitemap: https://andy-grails.de/sitemap.xml
