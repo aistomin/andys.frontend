@@ -14,6 +14,7 @@
     "jest-canvas-mock"
   ],
   "setupFilesAfterEnv": [
+    "./src/__setup__/preSetupTests.jsx",
     "./src/__setup__/setupTests.jsx"
   ],
   "testEnvironment": "jsdom"
