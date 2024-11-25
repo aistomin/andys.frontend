@@ -30,6 +30,7 @@
     "react-parallax-tilt": "^1.7.257",
     "react-router-dom": "^7.0.1",
     "rollbar": "^2.26.4",
+    "util": "^0.12.5",
     "vite-plugin-environment": "^1.1.3"
   },
   "devDependencies": {

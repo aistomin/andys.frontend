@@ -4,6 +4,8 @@ import {render} from "@testing-library/react";
 import {StoreProvider} from "easy-peasy";
 import App from "../App.jsx";
 
+console.log("setupTests.jsx is called.");
+
 window.scrollTo = jest.fn();
 
 export const renderAppWithStore = () => {
@@ -13,3 +15,5 @@ export const renderAppWithStore = () => {
         </StoreProvider>
     );
 }
+
+console.log("setupTests.jsx is finished.");
