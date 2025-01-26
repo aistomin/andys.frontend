@@ -27,7 +27,7 @@
     "react-ga4": "^2.1.0",
     "react-google-recaptcha": "^3.1.0",
     "react-icons": "^5.4.0",
-    "react-parallax-tilt": "^1.7.273",
+    "react-parallax-tilt": "^1.7.274",
     "react-router-dom": "^7.1.3",
     "rollbar": "^2.26.4",
     "util": "^0.12.5",
