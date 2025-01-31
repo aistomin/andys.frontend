@@ -28,6 +28,8 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
+      - name: Reset GitHub Actions Runner
+        run: rm -rf /home/runner/work/_actions
       - name: Explicitly use upload-artifact@v4
         uses: actions/upload-artifact@v4
         with:
