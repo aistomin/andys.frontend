@@ -4,7 +4,7 @@ name: Deploy static content to Pages
 on:
   # Runs on pushes targeting the default branch
   push:
-    branches: ['main']
+    branches: [ 'main' ]
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -28,6 +28,11 @@ jobs:
       url: ${{ steps.deployment.outputs.page_url }}
     runs-on: ubuntu-latest
     steps:
+      - name: Explicitly use upload-artifact@v4
+        uses: actions/upload-artifact@v4
+        with:
+            name: dummy-artifact
+            path: README.md  # Just a placeholder file
       - name: Checkout
         uses: actions/checkout@v4
       - name: Set up Node
