@@ -30,15 +30,10 @@ jobs:
     steps:
       - name: Reset GitHub Actions Runner
         run: rm -rf /home/runner/work/_actions
-      - name: Explicitly use upload-artifact@v4
-        uses: actions/upload-artifact@v4
-        with:
-            name: dummy-artifact
-            path: README.md  # Just a placeholder file
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@main
       - name: Set up Node
-        uses: actions/setup-node@v4
+        uses: actions/setup-node@main
         with:
           node-version: 18
           cache: 'npm'
@@ -47,12 +42,12 @@ jobs:
       - name: Build
         run: npm run build
       - name: Setup Pages
-        uses: actions/configure-pages@v4
+        uses: actions/configure-pages@main
       - name: Upload artifact
-        uses: actions/upload-pages-artifact@v2
+        uses: actions/upload-pages-artifact@main
         with:
           # Upload dist repository
           path: './dist'
       - name: Deploy to GitHub Pages
         id: deployment
-        uses: actions/deploy-pages@v2
+        uses: actions/deploy-pages@main
