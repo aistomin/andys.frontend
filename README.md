@@ -3,6 +3,8 @@
 [![CI](https://github.com/aistomin/andys.frontend/actions/workflows/build.yml/badge.svg)](https://github.com/aistomin/andys.frontend/actions/workflows/build.yml)
 [![Production](https://github.com/aistomin/andys.frontend/actions/workflows/deploy-to-pages.yml/badge.svg)](https://github.com/aistomin/andys.frontend/actions/workflows/deploy-to-pages.yml)
 
+New Repo: https://github.com/aistomin/andy.grails.frontend
+
 This repository contains the source code of 
 the Andy's [website](https://andy-grails.de/). The website contains videos, 
 lyrics and music sheets, that are created, re-worked or covered by this amateur artist, who
